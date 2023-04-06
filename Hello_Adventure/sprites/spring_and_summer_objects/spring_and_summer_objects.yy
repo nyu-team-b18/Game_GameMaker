@@ -4,7 +4,7 @@
   "name": "spring_and_summer_objects",
   "bbox_bottom": 207,
   "bbox_left": 0,
-  "bbox_right": 202,
+  "bbox_right": 207,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,

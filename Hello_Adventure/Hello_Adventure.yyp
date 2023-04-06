@@ -24,9 +24,9 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Shaders","folderPath":"folders/Shaders.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sounds","folderPath":"folders/Sounds.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sprites","folderPath":"folders/Sprites.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sheets","folderPath":"folders/Sprites/Sheets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sheets","folderPath":"folders/Sprites/Sheets.yy",},
   ],
   "IncludedFiles": [],
   "isEcma": false,
@@ -61,9 +61,11 @@
     {"id":{"name":"Spring_Summer_Objs","path":"tilesets/Spring_Summer_Objs/Spring_Summer_Objs.yy",},},
     {"id":{"name":"barn","path":"sprites/barn/barn.yy",},},
     {"id":{"name":"Fall_Farm","path":"tilesets/Fall_Farm/Fall_Farm.yy",},},
+    {"id":{"name":"rm_level_1","path":"rooms/rm_level_1/rm_level_1.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "RoomOrderNodes": [
+    {"roomId":{"name":"rm_level_1","path":"rooms/rm_level_1/rm_level_1.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "TextureGroups": [

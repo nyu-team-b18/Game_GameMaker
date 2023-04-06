@@ -13,9 +13,9 @@
     {"name":"Shaders","order":6,"path":"folders/Shaders.yy",},
     {"name":"Sounds","order":3,"path":"folders/Sounds.yy",},
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
+    {"name":"Sheets","order":3,"path":"folders/Sprites/Sheets.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"Sheets","order":3,"path":"folders/Sprites/Sheets.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"Winter_Farm","order":2,"path":"tilesets/Winter_Farm/Winter_Farm.yy",},
@@ -40,5 +40,6 @@
     {"name":"Spring_Summer_Objs","order":3,"path":"tilesets/Spring_Summer_Objs/Spring_Summer_Objs.yy",},
     {"name":"barn","order":7,"path":"sprites/barn/barn.yy",},
     {"name":"Fall_Farm","order":11,"path":"tilesets/Fall_Farm/Fall_Farm.yy",},
+    {"name":"rm_level_1","order":1,"path":"rooms/rm_level_1/rm_level_1.yy",},
   ],
 }
