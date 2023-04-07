@@ -13,20 +13,20 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5aea8591-5832-4234-a061-5553b9b8523b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7c9dfc68-bc04-4ba0-a01a-98bf0093b43e",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 20,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"1db55c31-a498-4f7b-9dd9-ca32811a7ad6","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"233e47b8-f895-487c-b914-61fca9a7067b","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 7,
   "parent": {
-    "name": "farm_animals",
-    "path": "folders/Sprites/farm_animals.yy",
+    "name": "Adults",
+    "path": "folders/Sprites/Animals/Cows/Adults.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"5aea8591-5832-4234-a061-5553b9b8523b","path":"sprites/strawberry_cow_idle/strawberry_cow_idle.yy",},},},"Disabled":false,"id":"c88c991a-572b-4655-bbd5-030a29fbcee5","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7c9dfc68-bc04-4ba0-a01a-98bf0093b43e","path":"sprites/strawberry_cow_idle/strawberry_cow_idle.yy",},},},"Disabled":false,"id":"625cb076-7aec-4a47-886f-e0ed0dd4189c","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
