@@ -13,20 +13,20 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c367e9ea-db98-47d8-b7a9-34630396dd06",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9101b372-1237-408e-b346-9ab2411e2c49",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 16,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ace26fd4-8e6e-4b7a-b566-20c877a89d5b","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"d8d5e498-a8cb-4037-9675-e39c7baf7b31","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 7,
   "parent": {
-    "name": "farm_animals",
-    "path": "folders/Sprites/farm_animals.yy",
+    "name": "Babies",
+    "path": "folders/Sprites/Animals/Goats/Babies.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c367e9ea-db98-47d8-b7a9-34630396dd06","path":"sprites/baby_white_goat_idle/baby_white_goat_idle.yy",},},},"Disabled":false,"id":"8358c995-f4ff-47ce-a840-fd4696cd8db3","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"9101b372-1237-408e-b346-9ab2411e2c49","path":"sprites/baby_white_goat_idle/baby_white_goat_idle.yy",},},},"Disabled":false,"id":"708714ba-7160-4da4-bf28-45e6fa418ddf","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

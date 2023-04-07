@@ -13,20 +13,20 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5f660338-76bd-4843-a9c3-863ef6cfcd69",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7b878113-8844-4557-b882-5b7455ac8c71",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 52,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"31d55449-7ebb-46d0-be27-1955d73ac2b3","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b1204f25-caf6-425e-bc20-d2cb88e20aa3","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "sprite_sheets",
-    "path": "folders/Sprites/farm_animals/sprite_sheets.yy",
+    "name": "animal sheets",
+    "path": "folders/Sprites/Sheets/animal sheets.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -47,14 +47,14 @@
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
-    "playbackSpeed": 30.0,
+    "playbackSpeed": 1.0,
     "playbackSpeedType": 0,
     "showBackdrop": true,
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"5f660338-76bd-4843-a9c3-863ef6cfcd69","path":"sprites/white_goat/white_goat.yy",},},},"Disabled":false,"id":"199dcec0-3649-4f5d-a6bc-a9f40990fbe2","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7b878113-8844-4557-b882-5b7455ac8c71","path":"sprites/white_goat/white_goat.yy",},},},"Disabled":false,"id":"25d9806b-3deb-4dd4-ac45-56c1e8f547ed","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

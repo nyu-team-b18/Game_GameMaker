@@ -13,20 +13,20 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"65a34257-520c-4286-a273-b6c81a15dc33",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c653a45e-9aac-4432-b1ac-a765898f3fc3",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 32,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"07ea9d46-0c56-41ab-8335-479ecfde85b2","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a3897488-2fc9-4b11-a439-9b1f6ed90869","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 0,
+  "origin": 7,
   "parent": {
-    "name": "sprite_sheets",
-    "path": "folders/Sprites/farm_animals/sprite_sheets.yy",
+    "name": "animal sheets",
+    "path": "folders/Sprites/Sheets/animal sheets.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -54,13 +54,13 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"65a34257-520c-4286-a273-b6c81a15dc33","path":"sprites/black_chicken/black_chicken.yy",},},},"Disabled":false,"id":"e1b3e80e-dbd6-4558-a65b-87527486c441","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c653a45e-9aac-4432-b1ac-a765898f3fc3","path":"sprites/black_chicken/black_chicken.yy",},},},"Disabled":false,"id":"9989b5e5-8c35-4809-b9bd-3de65f501a64","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 0,
-    "yorigin": 0,
+    "xorigin": 40,
+    "yorigin": 32,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

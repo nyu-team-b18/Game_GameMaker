@@ -13,20 +13,20 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"81777165-fec9-4286-a596-838ef3b9edb7",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fca567ba-6efd-4fa2-b9ff-84f9074935d4",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 52,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"0c81b6e2-bddd-4390-9276-72a75d6f5a30","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"1e6393b4-d4c9-4d36-b20a-c98808bf48a8","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "sprite_sheets",
-    "path": "folders/Sprites/farm_animals/sprite_sheets.yy",
+    "name": "animal sheets",
+    "path": "folders/Sprites/Sheets/animal sheets.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -47,14 +47,14 @@
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
-    "playbackSpeed": 30.0,
+    "playbackSpeed": 1.0,
     "playbackSpeedType": 0,
     "showBackdrop": true,
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"81777165-fec9-4286-a596-838ef3b9edb7","path":"sprites/baby_black_cow/baby_black_cow.yy",},},},"Disabled":false,"id":"4d5ec75d-a18b-4dae-809d-d602ea7d65e3","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"fca567ba-6efd-4fa2-b9ff-84f9074935d4","path":"sprites/baby_black_cow/baby_black_cow.yy",},},},"Disabled":false,"id":"77962d2f-dd0e-4b0a-8d16-4c1291939360","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

@@ -13,20 +13,20 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5d4c635c-d7a9-4cb7-b230-f9ef12937f9b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e4f61bd7-7f6f-4ba9-8471-2456a6863893",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 52,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"3610141a-1171-45c5-9a80-2427a621071c","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"8c7a1c2a-dd65-4c8b-bf39-cc7e83045714","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "sprite_sheets",
-    "path": "folders/Sprites/farm_animals/sprite_sheets.yy",
+    "name": "animal sheets",
+    "path": "folders/Sprites/Sheets/animal sheets.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -47,14 +47,14 @@
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
-    "playbackSpeed": 30.0,
+    "playbackSpeed": 1.0,
     "playbackSpeedType": 0,
     "showBackdrop": true,
     "showBackdropImage": false,
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"5d4c635c-d7a9-4cb7-b230-f9ef12937f9b","path":"sprites/strawberry_cow/strawberry_cow.yy",},},},"Disabled":false,"id":"b8d64706-252f-41c4-9526-b1bbd0528749","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e4f61bd7-7f6f-4ba9-8471-2456a6863893","path":"sprites/strawberry_cow/strawberry_cow.yy",},},},"Disabled":false,"id":"e576af89-2d01-4d93-9c12-3e259deb0338","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

@@ -13,20 +13,20 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"be790f44-6e7a-4332-8f40-205de349dac2",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a9ac5db8-c0fc-4428-8608-3bb4aa8419f5",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 52,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"39a35fc4-85ab-4e13-b13c-4a2d16ecd699","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"96ecbffe-61e1-46e6-a0f5-58cd2d917e13","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 0,
+  "origin": 7,
   "parent": {
-    "name": "sprite_sheets",
-    "path": "folders/Sprites/farm_animals/sprite_sheets.yy",
+    "name": "animal sheets",
+    "path": "folders/Sprites/Sheets/animal sheets.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -54,13 +54,13 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"be790f44-6e7a-4332-8f40-205de349dac2","path":"sprites/brown_cow/brown_cow.yy",},},},"Disabled":false,"id":"6034c5f9-432c-40ad-91c8-4e46f9bbeb12","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"a9ac5db8-c0fc-4428-8608-3bb4aa8419f5","path":"sprites/brown_cow/brown_cow.yy",},},},"Disabled":false,"id":"1ac15c98-d7ab-4176-853d-5556292d3753","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 0,
-    "yorigin": 0,
+    "xorigin": 65,
+    "yorigin": 52,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

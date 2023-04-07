@@ -13,20 +13,20 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c08663f4-1716-4b8f-b443-951883ab3639",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"30389212-9139-4cb9-a443-05305a93217e",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 16,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a312e158-a880-48e9-b409-f109abf5fede","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ffafc032-4595-4d74-b366-a57ca5a58f7f","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 7,
   "parent": {
-    "name": "farm_animals",
-    "path": "folders/Sprites/farm_animals.yy",
+    "name": "Babies",
+    "path": "folders/Sprites/Animals/Cows/Babies.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c08663f4-1716-4b8f-b443-951883ab3639","path":"sprites/baby_brown_cow_idle/baby_brown_cow_idle.yy",},},},"Disabled":false,"id":"f9c005dd-bc05-495a-b0ef-24c649230331","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"30389212-9139-4cb9-a443-05305a93217e","path":"sprites/baby_brown_cow_idle/baby_brown_cow_idle.yy",},},},"Disabled":false,"id":"5d0fadb4-1f15-4624-8c20-b79edf53c484","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

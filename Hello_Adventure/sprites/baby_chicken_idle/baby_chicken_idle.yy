@@ -13,20 +13,20 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0f78750d-6881-4758-80ff-84e95ce5cbc2",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f93f1833-d232-4795-a15b-7c34c50a958b",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 10,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"40215946-2a19-4948-8398-3a4a12e10f94","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"93e28b93-7479-4fd0-9c81-c873b1b62dad","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 7,
   "parent": {
-    "name": "farm_animals",
-    "path": "folders/Sprites/farm_animals.yy",
+    "name": "Babies",
+    "path": "folders/Sprites/Animals/Chickens/Babies.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0f78750d-6881-4758-80ff-84e95ce5cbc2","path":"sprites/baby_chicken_idle/baby_chicken_idle.yy",},},},"Disabled":false,"id":"41946de7-5c2f-4d46-9622-d9455b780562","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"f93f1833-d232-4795-a15b-7c34c50a958b","path":"sprites/baby_chicken_idle/baby_chicken_idle.yy",},},},"Disabled":false,"id":"f07bdc9c-6845-4cd6-bf09-307112c0dfd2","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

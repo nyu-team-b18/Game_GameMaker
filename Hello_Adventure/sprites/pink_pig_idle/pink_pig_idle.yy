@@ -13,20 +13,20 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f787a6a8-b1a5-44f9-aa1d-a299fc7690af",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"839f526d-0644-48c2-b277-565553a2e59c",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 16,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"f489b91f-d8da-4eb2-bebb-02b8b7256f35","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"00faea6b-c87e-43ce-902a-9eaad3e3729d","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 7,
+  "origin": 0,
   "parent": {
-    "name": "farm_animals",
-    "path": "folders/Sprites/farm_animals.yy",
+    "name": "Adults",
+    "path": "folders/Sprites/Animals/Pigs/Adults.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -54,13 +54,13 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"f787a6a8-b1a5-44f9-aa1d-a299fc7690af","path":"sprites/pink_pig_idle/pink_pig_idle.yy",},},},"Disabled":false,"id":"260e74c4-96d1-4eaf-a165-d24805b38236","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"839f526d-0644-48c2-b277-565553a2e59c","path":"sprites/pink_pig_idle/pink_pig_idle.yy",},},},"Disabled":false,"id":"5338ea02-6a98-4f6e-a4dc-a7a103e7bea2","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 13,
-    "yorigin": 16,
+    "xorigin": 0,
+    "yorigin": 0,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

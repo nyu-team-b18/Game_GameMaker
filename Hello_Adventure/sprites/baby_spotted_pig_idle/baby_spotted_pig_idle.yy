@@ -13,20 +13,20 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"20294205-5a4f-42ce-95c5-7ddb5aeb7232",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7c4cf106-9ef1-46e1-9d38-3ec73501069f",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 14,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a18c0892-83f2-4d5d-a6ec-4d7c299a66ad","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"4c9191bb-c5ca-4664-81f7-e2052c5bfd4f","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 7,
   "parent": {
-    "name": "farm_animals",
-    "path": "folders/Sprites/farm_animals.yy",
+    "name": "Babies",
+    "path": "folders/Sprites/Animals/Pigs/Babies.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"20294205-5a4f-42ce-95c5-7ddb5aeb7232","path":"sprites/baby_spotted_pig_idle/baby_spotted_pig_idle.yy",},},},"Disabled":false,"id":"aed095cc-608e-4db8-bfb6-d75d9cc3a481","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7c4cf106-9ef1-46e1-9d38-3ec73501069f","path":"sprites/baby_spotted_pig_idle/baby_spotted_pig_idle.yy",},},},"Disabled":false,"id":"a02a0e25-f148-4009-a1e8-a039499eb247","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

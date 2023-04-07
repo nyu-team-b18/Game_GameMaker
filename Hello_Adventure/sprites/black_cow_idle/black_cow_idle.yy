@@ -13,20 +13,20 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"366a8441-391a-4927-bc95-c4e318fdea23",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7c9dfc68-bc04-4ba0-a01a-98bf0093b43e",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 20,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b9e1f5f4-a6eb-4cd0-a0e5-d47775cd3feb","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"233e47b8-f895-487c-b914-61fca9a7067b","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 7,
   "parent": {
-    "name": "farm_animals",
-    "path": "folders/Sprites/farm_animals.yy",
+    "name": "Adults",
+    "path": "folders/Sprites/Animals/Cows/Adults.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"366a8441-391a-4927-bc95-c4e318fdea23","path":"sprites/black_cow_idle/black_cow_idle.yy",},},},"Disabled":false,"id":"2f3a3ab2-b980-43c4-a52b-173ff8393aff","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7c9dfc68-bc04-4ba0-a01a-98bf0093b43e","path":"sprites/black_cow_idle/black_cow_idle.yy",},},},"Disabled":false,"id":"b793f2ad-ab9f-4b41-8a47-f403b73e21f5","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

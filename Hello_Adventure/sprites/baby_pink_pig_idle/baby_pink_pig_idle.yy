@@ -13,20 +13,20 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"eb864140-f021-45ef-8cd2-db6853d73afa",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3145dd12-fa9a-4b70-8891-3c9b133ef050",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 14,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"1fe90935-3b94-449f-89e9-f1ecab6efc9e","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"6c027b30-66fc-46ee-ad17-e1ec0ca1f58e","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 4,
+  "origin": 7,
   "parent": {
-    "name": "farm_animals",
-    "path": "folders/Sprites/farm_animals.yy",
+    "name": "Babies",
+    "path": "folders/Sprites/Animals/Pigs/Babies.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -54,13 +54,13 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"eb864140-f021-45ef-8cd2-db6853d73afa","path":"sprites/baby_pink_pig_idle/baby_pink_pig_idle.yy",},},},"Disabled":false,"id":"fe820f52-cce2-47d6-aa15-49eb19472a67","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"3145dd12-fa9a-4b70-8891-3c9b133ef050","path":"sprites/baby_pink_pig_idle/baby_pink_pig_idle.yy",},},},"Disabled":false,"id":"078be236-de71-4681-8a12-7262d81d41e5","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 12,
-    "yorigin": 7,
+    "yorigin": 14,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,
