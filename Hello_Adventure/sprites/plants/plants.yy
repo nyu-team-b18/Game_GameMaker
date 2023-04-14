@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Sheets",
-    "path": "folders/Sprites/Sheets.yy",
+    "name": "farm tileset",
+    "path": "folders/Sprites/Sheets/farm tileset.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
