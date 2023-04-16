@@ -108,6 +108,7 @@
     {"name":"baby_spotted_pig","order":11,"path":"sprites/baby_spotted_pig/baby_spotted_pig.yy",},
     {"name":"plants","order":5,"path":"sprites/plants/plants.yy",},
     {"name":"Spring_Farm","order":6,"path":"tilesets/Spring_Farm/Spring_Farm.yy",},
+    {"name":"obj_animal","order":4,"path":"objects/obj_animal/obj_animal.yy",},
     {"name":"baby_black_goat_walk","order":1,"path":"sprites/baby_black_goat_walk/baby_black_goat_walk.yy",},
     {"name":"Front_Blush_0","order":1,"path":"sprites/Front_Blush_0/Front_Blush_0.yy",},
     {"name":"baby_white_goat_walk","order":7,"path":"sprites/baby_white_goat_walk/baby_white_goat_walk.yy",},
