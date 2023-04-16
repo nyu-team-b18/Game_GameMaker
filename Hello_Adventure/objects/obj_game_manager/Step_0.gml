@@ -1,7 +1,37 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-// DONE
+// START TO ROOM 1
+// USE THIS CODE TO SWITCH ROOMS FOR TESTING
+// comment out the if statement needed to start at the needed room
+
+//room 1
+if (room == rm_start and keyboard_check(vk_enter)) {
+	room_goto(rm_level_1)
+	obj_player.x = 20
+	obj_player.y = 100
+}
+
+//// room 3a
+//if (room == rm_start and keyboard_check(vk_enter)) {
+//	room_goto(rm_level_3_A)
+//	obj_player.x = 800
+//	obj_player.y = 32
+//}
+
+//// room 3b
+//if (room == rm_start and keyboard_check(vk_enter)) {
+//	room_goto(rm_level_3_B)
+//	obj_player.x = 600
+//	obj_player.y = 21
+//}
+
+//// room 3c
+//if (room == rm_start and keyboard_check(vk_enter)) {
+//	room_goto(rm_level_3_B)
+//	obj_player.x = 593
+//	obj_player.y = 102
+//}
 
 // ROOM 1 TO 3A SWITCH
 if (room == rm_level_1 and obj_player.x >= 700 and obj_player.x <= 780 and obj_player.y >= 475) {
