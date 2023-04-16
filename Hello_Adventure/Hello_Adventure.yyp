@@ -137,6 +137,7 @@
     {"id":{"name":"baby_spotted_pig","path":"sprites/baby_spotted_pig/baby_spotted_pig.yy",},},
     {"id":{"name":"plants","path":"sprites/plants/plants.yy",},},
     {"id":{"name":"Spring_Farm","path":"tilesets/Spring_Farm/Spring_Farm.yy",},},
+    {"id":{"name":"obj_animal","path":"objects/obj_animal/obj_animal.yy",},},
     {"id":{"name":"baby_black_goat_walk","path":"sprites/baby_black_goat_walk/baby_black_goat_walk.yy",},},
     {"id":{"name":"Front_Blush_0","path":"sprites/Front_Blush_0/Front_Blush_0.yy",},},
     {"id":{"name":"baby_white_goat_walk","path":"sprites/baby_white_goat_walk/baby_white_goat_walk.yy",},},
