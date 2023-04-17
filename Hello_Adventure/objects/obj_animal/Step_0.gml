@@ -1,4 +1,4 @@
-/// @Update animal instance
+/// @Update animal object
 
 xspd = speed * hmove;
 yspd = speed * vmove;
