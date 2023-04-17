@@ -1,16 +1,25 @@
 /// @Create animal object
 
-alarm[0] = choose (300, 480);
+spd = choose(1, -1, 0, 0);
 
-speed = choose(1, 1, -1, -1, 0);
-dir = choose("hor", "ver");
-if (speed == 0){ dir = ""; }
+if (spd == 0){ 
+	dir = ""; 
+	alarm[0] = choose (300, 450);
+} else {
+	dir = choose("hor", "ver");
+	alarm[0] = choose (60, 120);
+}
 
 xspd = 0;
 yspd = 0;
+hmove = 0;
+vmove = 0;
 
-hmove = 1;
-vmove = 1;
+if (dir == "hor"){
+	hmove = 1;
+} else if (dir == "ver"){
+	vmove = 1;
+}
 
 animals = [
 	[black_chicken_idle, black_chicken_walk],
@@ -40,5 +49,3 @@ animals = [
 
 animal_ind = floor(random(array_length(animals)));
 sprite_index = animals[animal_ind][0]
-
-dir = "";

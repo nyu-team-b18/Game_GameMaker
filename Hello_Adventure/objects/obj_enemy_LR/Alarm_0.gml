@@ -1,4 +1,4 @@
 /// @Alarm for enemy movement
 
-speed *= 1;
-alarm[0] = choose (60);
+spd *= -1;
+alarm[0] = 120;
