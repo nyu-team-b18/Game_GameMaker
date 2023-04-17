@@ -6,18 +6,18 @@
 // comment out the if statement needed to start at the needed room
 
 //room 1
-if (room == rm_start and keyboard_check(vk_enter)) {
-	room_goto(rm_level_1)
-	obj_player.x = 20
-	obj_player.y = 100
-}
-
-//// room 3a
 //if (room == rm_start and keyboard_check(vk_enter)) {
-//	room_goto(rm_level_3_A)
-//	obj_player.x = 800
-//	obj_player.y = 32
+//	room_goto(rm_level_1)
+//	obj_player.x = 20
+//	obj_player.y = 100
 //}
+
+// room 3a
+if (room == rm_start and keyboard_check(vk_enter)) {
+	room_goto(rm_level_3_A)
+	obj_player.x = 800
+	obj_player.y = 32
+}
 
 //// room 3b
 //if (room == rm_start and keyboard_check(vk_enter)) {
