@@ -1,4 +1,4 @@
-/// @Create animal instance
+/// @Create animal object
 
 alarm[0] = choose (300, 480);
 
