@@ -65,7 +65,7 @@ if (room == rm_level_3_B and obj_player.x >= 500 and obj_player.x <= 700 and obj
 if (room == rm_level_3_B and obj_player.x >= 270 and obj_player.x <= 300 and obj_player.y >= 1210 and obj_player.y <= 1230) {
 	room_goto(rm_level_3_C)
 	obj_player.x = 593
-	obj_player.y = 102
+	obj_player.y = 200
 }
 
 // ROOM 3C TO 3B SWITCH
