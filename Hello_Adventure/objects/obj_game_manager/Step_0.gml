@@ -13,18 +13,18 @@
 //}
 
 // room 3a
-//if (room == rm_start and keyboard_check(vk_enter)) {
-//	room_goto(rm_level_3_A)
-//	obj_player.x = 800
-//	obj_player.y = 32
-//}
+if (room == rm_start and keyboard_check(vk_enter)) {
+	room_goto(rm_level_3_A)
+	obj_player.x = 800
+	obj_player.y = 32
+}
 
 //// room 3b
-if (room == rm_start and keyboard_check(vk_enter)) {
-	room_goto(rm_level_3_B)
-	obj_player.x = 600
-	obj_player.y = 21
-}
+//if (room == rm_start and keyboard_check(vk_enter)) {
+//	room_goto(rm_level_3_B)
+//	obj_player.x = 600
+//	obj_player.y = 21
+//}
 
 //// room 3c
 //if (room == rm_start and keyboard_check(vk_enter)) {
