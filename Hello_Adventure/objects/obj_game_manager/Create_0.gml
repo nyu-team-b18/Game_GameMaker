@@ -1,12 +1,10 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @Game Manager
 
-// player health
-// player stamina
-// player inventory
-globalvar HEALTH
-globalvar STAMINA
 #macro INVENTORY_SLOTS 10
 
-HEALTH = 6
-STAMINA = 10
+global.playerHealthMax = 3;
+global.playerHealth = global.playerHealthMax;
+global.playerStaminaMax = 5;
+global.playerStamina = global.playerStaminaMax;
+
+global.iUI = instance_create_layer(0, 0, "GUI_he_sta", obj_UI);
