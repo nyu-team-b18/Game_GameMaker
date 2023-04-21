@@ -20,18 +20,18 @@
 //}
 
 //// room 3b
-if (room == rm_start and keyboard_check(vk_enter)) {
-	room_goto(rm_level_3_B)
-	obj_player.x = 600
-	obj_player.y = 21
-}
-
-//// room 3c
 //if (room == rm_start and keyboard_check(vk_enter)) {
 //	room_goto(rm_level_3_B)
-//	obj_player.x = 593
-//	obj_player.y = 102
+//	obj_player.x = 600
+//	obj_player.y = 21
 //}
+
+//// room 3c
+if (room == rm_start and keyboard_check(vk_enter)) {
+	room_goto(rm_level_3_C)
+	obj_player.x = 593
+	obj_player.y = 102
+}
 
 // ROOM 1 TO 3A SWITCH
 if (room == rm_level_1 and obj_player.x >= 700 and obj_player.x <= 780 and obj_player.y >= 475) {
@@ -65,13 +65,13 @@ if (room == rm_level_3_B and obj_player.x >= 500 and obj_player.x <= 700 and obj
 if (room == rm_level_3_B and obj_player.x >= 270 and obj_player.x <= 300 and obj_player.y >= 1210 and obj_player.y <= 1230) {
 	room_goto(rm_level_3_C)
 	obj_player.x = 593
-	obj_player.y = 200
+	obj_player.y = 135
 }
 
 // ROOM 3C TO 3B SWITCH
 if (room == rm_level_3_C and obj_player.x >= 575 and obj_player.x <= 610 and obj_player.y >= 60 and obj_player.y <= 90) {
 	room_goto(rm_level_3_B)
 	obj_player.x = 287
-	obj_player.y = 1249
+	obj_player.y = 1274
 }
 
