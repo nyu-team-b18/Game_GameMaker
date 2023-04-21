@@ -1,4 +1,8 @@
-/// @Update enemy object
+/// @Update LR enemy object
+
+if (spd != 0){
+	sprite_index = fire_elem_walk;
+}
 
 xspd = spd * hmove;
 
