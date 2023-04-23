@@ -20,7 +20,7 @@ if (room != rm_start) {
 	{
 		var xx = ((INVENTORY_SLOTS * 29) / 2) + (i mod rowLength) * 28 + 19
 		var yy = 250 + (i div rowLength) * 30 + 17
-		draw_sprite(spr_inv_items, inventory[i], xx, yy)
+		draw_sprite(spr_inv_items, inventory[i].inv_image_index, xx, yy)
 	}
 	
 	// given the key input (0-9), determine highlighted slot
@@ -94,9 +94,9 @@ if (room != rm_start) {
 	if array_length(inventory) > 0 and index_value != -1 {
 		// draw selected ui sprite
 		draw_sprite(spr_inv_selected, 0, xx, yy)
-		
-		// set selected item to true
 		selected_index = index_value
+	} else {
+		selected_index = -1
 	}
 	
 }

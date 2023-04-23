@@ -1,4 +1,17 @@
-function InventoryRemove(inv, index){
+function InventoryDrop(inv, index){
+	if array_length(global.inventory_id.inventory) > 0 and index < array_length(global.inventory_id.inventory) {
+		var obj_to_create = global.inventory_id.item_array[inv[index].inv_image_index]
+		instance_create_layer(
+			obj_player.x,
+			obj_player.y,
+			"Instances",
+			obj_to_create
+		)
+		array_delete(inv, index, 1);
+	}	
+}
+
+function InventoryUse(inv, index){
 	if array_length(global.inventory_id.inventory) > 0 and index < array_length(global.inventory_id.inventory) {
 		array_delete(inv, index, 1);
 	}	
