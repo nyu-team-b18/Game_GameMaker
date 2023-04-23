@@ -5,7 +5,6 @@ enum ENEMY_STATE{
 	left_right,
 	up_down,
 	in_place,
-	knockback,
 	dead
 }
  

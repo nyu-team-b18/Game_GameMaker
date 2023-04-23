@@ -7,7 +7,8 @@ knockback_fr = .9;
 
 enum PLAYER_STATE{
 	in_control,
-	hurt
+	hurt,
+	attack
 }
 
 state = PLAYER_STATE.in_control;
