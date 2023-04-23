@@ -1,8 +1,5 @@
 /// @Update In-Place enemy object
+event_inherited();
 
-damage = 2;
-left = choose(true, false);
-
-if (left){
-	image_xscale = -1;
-}
+damage = 1;
+image_xscale = choose(1, -1);

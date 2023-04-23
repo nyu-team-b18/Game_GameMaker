@@ -165,6 +165,7 @@
     {"name":"baby_black_cow_walk","order":1,"path":"sprites/baby_black_cow_walk/baby_black_cow_walk.yy",},
     {"name":"autumn_objects","order":1,"path":"sprites/autumn_objects/autumn_objects.yy",},
     {"name":"fire_elem_attack","order":2,"path":"sprites/fire_elem_attack/fire_elem_attack.yy",},
+    {"name":"obj_enemy","order":9,"path":"objects/obj_enemy/obj_enemy.yy",},
     {"name":"black_cow_walk","order":1,"path":"sprites/black_cow_walk/black_cow_walk.yy",},
     {"name":"rm_start","order":5,"path":"rooms/rm_start/rm_start.yy",},
     {"name":"Plants","order":5,"path":"tilesets/Plants/Plants.yy",},

@@ -148,7 +148,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1321A368","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_collidable","path":"objects/obj_collidable/obj_collidable.yy",},"properties":[],"rotation":0.0,"scaleX":1.96875,"scaleY":1.5322623,"x":240.22726,"y":120.5162,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_51BBEF9B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_collidable","path":"objects/obj_collidable/obj_collidable.yy",},"properties":[],"rotation":0.0,"scaleX":2.1806378,"scaleY":1.5625,"x":79.4451,"y":906.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_69C0F408","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_collidable","path":"objects/obj_collidable/obj_collidable.yy",},"properties":[],"rotation":0.0,"scaleX":1.875,"scaleY":1.125,"x":783.0,"y":580.0,},
-      ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":false,},
+      ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Ladders","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":63,"SerialiseWidth":63,"TileCompressedData":[
 -2517,-2147483648,1,221,-62,-2147483648,1,237,-62,-2147483648,1,237,-32,-2147483648,1,7,-29,-2147483648,1,253,-92,-2147483648,3,7,-2147483648,22,-112,-2147483648,5,233,234,220,234,235,-60,-2147483648,1,236,-62,-2147483648,1,252,-255,-2147483648,1,185,-62,-2147483648,1,185,-62,-2147483648,1,201,-62,-2147483648,1,185,-62,-2147483648,1,185,-62,
 -2147483648,1,201,-62,-2147483648,1,217,-292,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"desert_inside","path":"tilesets/desert_inside/desert_inside.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
@@ -218,7 +218,7 @@
   "roomSettings": {
     "Height": 1000,
     "inheritRoomSettings": false,
-    "persistent": false,
+    "persistent": true,
     "Width": 1000,
   },
   "sequenceId": null,
