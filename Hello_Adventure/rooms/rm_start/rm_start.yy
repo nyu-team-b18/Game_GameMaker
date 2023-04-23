@@ -10,6 +10,7 @@
     {"name":"inst_27DEE9CC","path":"rooms/rm_start/rm_start.yy",},
     {"name":"inst_6B18B684","path":"rooms/rm_start/rm_start.yy",},
     {"name":"inst_3946F236","path":"rooms/rm_start/rm_start.yy",},
+    {"name":"inst_4C8BEA44","path":"rooms/rm_start/rm_start.yy",},
   ],
   "isDnd": false,
   "layers": [
