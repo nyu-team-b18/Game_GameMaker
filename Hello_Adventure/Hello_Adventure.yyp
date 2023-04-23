@@ -72,6 +72,7 @@
     "IDEVersion": "2023.2.1.75",
   },
   "resources": [
+    {"id":{"name":"obj_UI","path":"objects/obj_UI/obj_UI.yy",},},
     {"id":{"name":"Winter_Farm","path":"tilesets/Winter_Farm/Winter_Farm.yy",},},
     {"id":{"name":"obj_game_manager","path":"objects/obj_game_manager/obj_game_manager.yy",},},
     {"id":{"name":"front","path":"sprites/front/front.yy",},},
@@ -126,6 +127,7 @@
     {"id":{"name":"Wolf_Sprite_Sheet","path":"sprites/Wolf_Sprite_Sheet/Wolf_Sprite_Sheet.yy",},},
     {"id":{"name":"black_cow","path":"sprites/black_cow/black_cow.yy",},},
     {"id":{"name":"front_blush","path":"sprites/front_blush/front_blush.yy",},},
+    {"id":{"name":"spr_health","path":"sprites/spr_health/spr_health.yy",},},
     {"id":{"name":"sheep_idle","path":"sprites/sheep_idle/sheep_idle.yy",},},
     {"id":{"name":"fluffy_sheep","path":"sprites/fluffy_sheep/fluffy_sheep.yy",},},
     {"id":{"name":"strawberry_cow_idle","path":"sprites/strawberry_cow_idle/strawberry_cow_idle.yy",},},
@@ -222,6 +224,7 @@
     {"id":{"name":"obj_enemy_UD","path":"objects/obj_enemy_UD/obj_enemy_UD.yy",},},
     {"id":{"name":"baby_spotted_pig_walk","path":"sprites/baby_spotted_pig_walk/baby_spotted_pig_walk.yy",},},
     {"id":{"name":"brown_cow_walk","path":"sprites/brown_cow_walk/brown_cow_walk.yy",},},
+    {"id":{"name":"spr_stamina","path":"sprites/spr_stamina/spr_stamina.yy",},},
     {"id":{"name":"sheep","path":"sprites/sheep/sheep.yy",},},
     {"id":{"name":"baby_blackberry_goat","path":"sprites/baby_blackberry_goat/baby_blackberry_goat.yy",},},
     {"id":{"name":"wolf_walk","path":"sprites/wolf_walk/wolf_walk.yy",},},

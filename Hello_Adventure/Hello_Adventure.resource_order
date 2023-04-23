@@ -52,6 +52,7 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"obj_UI","order":8,"path":"objects/obj_UI/obj_UI.yy",},
     {"name":"Winter_Farm","order":9,"path":"tilesets/Winter_Farm/Winter_Farm.yy",},
     {"name":"obj_game_manager","order":2,"path":"objects/obj_game_manager/obj_game_manager.yy",},
     {"name":"front","order":1,"path":"sprites/front/front.yy",},
@@ -97,6 +98,7 @@
     {"name":"spotted_pig_walk","order":3,"path":"sprites/spotted_pig_walk/spotted_pig_walk.yy",},
     {"name":"black_cow","order":17,"path":"sprites/black_cow/black_cow.yy",},
     {"name":"front_blush","order":2,"path":"sprites/front_blush/front_blush.yy",},
+    {"name":"spr_health","order":7,"path":"sprites/spr_health/spr_health.yy",},
     {"name":"sheep_idle","order":2,"path":"sprites/sheep_idle/sheep_idle.yy",},
     {"name":"fluffy_sheep","order":24,"path":"sprites/fluffy_sheep/fluffy_sheep.yy",},
     {"name":"strawberry_cow_idle","order":4,"path":"sprites/strawberry_cow_idle/strawberry_cow_idle.yy",},
@@ -179,6 +181,7 @@
     {"name":"obj_enemy_UD","order":6,"path":"objects/obj_enemy_UD/obj_enemy_UD.yy",},
     {"name":"baby_spotted_pig_walk","order":3,"path":"sprites/baby_spotted_pig_walk/baby_spotted_pig_walk.yy",},
     {"name":"brown_cow_walk","order":3,"path":"sprites/brown_cow_walk/brown_cow_walk.yy",},
+    {"name":"spr_stamina","order":8,"path":"sprites/spr_stamina/spr_stamina.yy",},
     {"name":"sheep","order":23,"path":"sprites/sheep/sheep.yy",},
     {"name":"baby_blackberry_goat","order":6,"path":"sprites/baby_blackberry_goat/baby_blackberry_goat.yy",},
     {"name":"wolf_walk","order":5,"path":"sprites/wolf_walk/wolf_walk.yy",},
