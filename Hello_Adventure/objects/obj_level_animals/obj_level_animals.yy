@@ -1,15 +1,13 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_copy_potion",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-  ],
+  "name": "obj_level_animals",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Inv Items",
-    "path": "folders/Objects/Inv Items.yy",
+    "name": "Inv Animals",
+    "path": "folders/Objects/Inv Items/Inv Animals.yy",
   },
   "parentObjectId": {
     "name": "obj_inv_items",

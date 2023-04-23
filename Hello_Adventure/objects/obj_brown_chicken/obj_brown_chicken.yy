@@ -1,19 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_copy_potion",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-  ],
+  "name": "obj_brown_chicken",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Inv Items",
-    "path": "folders/Objects/Inv Items.yy",
+    "name": "Inv Animals",
+    "path": "folders/Objects/Inv Items/Inv Animals.yy",
   },
   "parentObjectId": {
-    "name": "obj_inv_items",
-    "path": "objects/obj_inv_items/obj_inv_items.yy",
+    "name": "obj_level_animals",
+    "path": "objects/obj_level_animals/obj_level_animals.yy",
   },
   "persistent": true,
   "physicsAngularDamping": 0.1,
