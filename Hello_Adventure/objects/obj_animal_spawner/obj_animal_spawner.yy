@@ -1,8 +1,11 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_animal_farm_collide",
-  "eventList": [],
+  "name": "obj_animal_spawner",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
@@ -26,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_animal_farm_collider",
-    "path": "sprites/spr_animal_farm_collider/spr_animal_farm_collider.yy",
+    "name": "spr_animal_spawner",
+    "path": "sprites/spr_animal_spawner/spr_animal_spawner.yy",
   },
   "spriteMaskId": null,
   "visible": false,

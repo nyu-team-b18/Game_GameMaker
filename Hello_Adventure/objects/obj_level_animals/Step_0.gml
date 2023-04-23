@@ -7,6 +7,13 @@ if (   place_meeting(x+2, y+2, obj_collidable)
 	spd *= -1;
 }
 
+if (   place_meeting(x+2, y+2, obj_animal_farm_collide) 
+	or place_meeting(x-2, y-2, obj_animal_farm_collide)
+	or place_meeting(x+2, y-2, obj_animal_farm_collide)
+	or place_meeting(x-2, y+2, obj_animal_farm_collide)){
+	spd *= -1;
+}
+
 hmove = 0;
 vmove = 0;
 
@@ -20,7 +27,7 @@ xspd = spd * hmove;
 yspd = spd * vmove;
 
 for (var i = 0; i < abs(xspd); i++){
-	if (!place_meeting(x + sign(xspd), y, obj_collidable)){
+	if (!place_meeting(x + sign(xspd), y, obj_collidable)) or (!place_meeting(x + sign(xspd), y, obj_animal_farm_collide)){
 		x += sign(xspd);
 	} else {
 		x += sign(-xspd);
@@ -29,7 +36,7 @@ for (var i = 0; i < abs(xspd); i++){
 }
 
 for (var i = 0; i < abs(yspd); i++){
-	if (!place_meeting(x, y + sign(yspd), obj_collidable)){
+	if (!place_meeting(x, y + sign(yspd), obj_collidable)) or (!place_meeting(x + sign(xspd), y, obj_animal_farm_collide)){
 		y += sign(yspd);
 	} else {
 		y += sign(-yspd);

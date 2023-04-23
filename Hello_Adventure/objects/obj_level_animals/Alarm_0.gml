@@ -1,4 +1,4 @@
-spd = choose(2, -2);
+spd = choose(1, -1);
 
 if (spd == 0){ 
 	dir = ""; 
