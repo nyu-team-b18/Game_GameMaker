@@ -14,6 +14,14 @@ if (   place_meeting(x+2, y+2, obj_animal_farm_collide)
 	spd *= -1;
 }
 
+if place_meeting(x,y,obj_animal_spots) {
+	spd = 0
+	if not safe {
+		obj_lvl1_manager.calmed_animal_count += 1
+		safe = true
+	}
+}
+
 hmove = 0;
 vmove = 0;
 

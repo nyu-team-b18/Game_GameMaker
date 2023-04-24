@@ -3,6 +3,7 @@ x_right = x + sprite_width/2
 y_up = y - sprite_height/2
 y_down = y + sprite_height/2
 
+curr_spawn_count = 3
 spawn_count = 3
 spawn = true
 

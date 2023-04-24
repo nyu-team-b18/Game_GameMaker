@@ -21,3 +21,5 @@ if (dir == "hor"){
 } else if (dir == "ver"){
 	vmove = 1;
 }
+
+safe = false
