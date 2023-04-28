@@ -17,13 +17,15 @@ switch(state){
 	
 	if (spd < 0){ image_xscale = -1; } 
 	else { image_xscale = 1; }
-	//image_xscale = (spd < 0)
-		// collisions
-	if (place_meeting(x, y, obj_collidable)
-		or place_meeting(x, y, obj_enemy)){
-		spd *= -1;
-	}
 	
+		// collisions
+	if (place_meeting(x, y, obj_collidable) or place_meeting(x, y, obj_enemy)){ spd *= -1;}
+	
+	if (!keyboard_check(vk_space) and place_meeting(x + obj_player.dx, y, obj_player)){
+		spd *= -1;
+		alarm[0] = 120 - alarm[0];
+	} 
+
 	break;
 	#endregion
 	
@@ -45,10 +47,12 @@ switch(state){
 	else { image_xscale = 1; }
 	
 		// collisions
-	if (place_meeting(x, y, obj_collidable)
-		or place_meeting(x, y, obj_enemy)){
+	if (place_meeting(x, y, obj_collidable) or place_meeting(x, y, obj_enemy)){ spd *= -1; }
+	
+	if (!keyboard_check(vk_space) and place_meeting(x, y + obj_player.dy, obj_player)){
 		spd *= -1;
-	}
+		alarm[0] = 120 - alarm[0];
+	}  
 	
 	break;
 	#endregion
@@ -58,14 +62,7 @@ switch(state){
 	sprite_index = fire_elem_attack;
 	break;
 	#endregion
-	
-	case ENEMY_STATE.knockback:
-	#region Enemy gets knocked back
-	
-	
-	break;
-	#endregion
-	
+
 	case ENEMY_STATE.dead:
 	#region Dead enemy (inactive)
 	sprite_index = fire_elem_death;
@@ -79,9 +76,9 @@ switch(state){
 }
 
 if ( keyboard_check(vk_space) and 
-	(place_meeting(x + obj_player.dx, y, obj_player) or
-	 place_meeting(x, y + obj_player.dy, obj_player) or 
-	 place_meeting(x - obj_player.dx, y, obj_player) or
-	 place_meeting(x, y - obj_player.dy, obj_player))){
-		state = ENEMY_STATE.dead;
-}
+	(place_meeting(x + obj_player.move_speed, y, obj_player) or
+	 place_meeting(x - obj_player.move_speed, y, obj_player) or
+	 place_meeting(x, y - obj_player.move_speed, obj_player) or
+	 place_meeting(x, y + obj_player.move_speed, obj_player))){
+	 state = ENEMY_STATE.dead;
+} 

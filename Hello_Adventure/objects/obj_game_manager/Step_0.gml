@@ -10,25 +10,39 @@
 //}
 
 // room 3a
-if (room == rm_start and keyboard_check(vk_enter)) {
-	room_goto(rm_level_3_A)
-	obj_player.x = 800
-	obj_player.y = 32
-}
+//if (room == rm_start and keyboard_check(vk_enter)) {
+//	room_goto(rm_level_3_A)
+//	obj_player.x = 800
+//	obj_player.y = 32
+//}
 
-//// room 3b
+// room 3b
 //if (room == rm_start and keyboard_check(vk_enter)) {
 //	room_goto(rm_level_3_B)
 //	obj_player.x = 600
 //	obj_player.y = 21
 //}
 
-//// room 3c
+// room 3c
 //if (room == rm_start and keyboard_check(vk_enter)) {
 //	room_goto(rm_level_3_C)
 //	obj_player.x = 593
 //	obj_player.y = 102
 //}
+
+ //room 3d
+//if (room == rm_start and keyboard_check(vk_enter)) {
+//	room_goto(rm_level_3_D)
+//	obj_player.x = 103
+//	obj_player.y = 285
+//}
+
+//room 3e
+if (room == rm_start and keyboard_check(vk_enter)) {
+	room_goto(rm_level_3_E)
+	obj_player.x = 740
+	obj_player.y = 445
+}
 
 // ROOM 1 TO 3A SWITCH
 if (room == rm_level_1 and obj_player.x >= 700 and obj_player.x <= 780 and obj_player.y >= 475) {
@@ -72,3 +86,16 @@ if (room == rm_level_3_C and obj_player.x >= 575 and obj_player.x <= 610 and obj
 	obj_player.y = 1274
 }
 
+// ROOM 3B TO 3C SWITCH -ALTERNATIVE-
+if (room == rm_level_3_B and obj_player.x >= 868 and obj_player.x <= 890 and obj_player.y >= 414 and obj_player.y <= 430) {
+	room_goto(rm_level_3_C)
+	obj_player.x = 967
+	obj_player.y = 700
+}
+
+// ROOM 3C TO 3B SWITCH -ALTERNATIVE-
+if (room == rm_level_3_C and obj_player.x >= 965 and obj_player.x <= 990 and obj_player.y >= 610 and obj_player.y <= 655) {
+	room_goto(rm_level_3_B)
+	obj_player.x = 880
+	obj_player.y = 410
+}

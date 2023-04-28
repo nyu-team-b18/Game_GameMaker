@@ -2,9 +2,14 @@ switch (state){
 	case PLAYER_STATE.hurt:
 		#region
 		sprite_index = spr_player_walk
-		dx = lerp(knockback_fr, 0, 0.10);
 		
-		if (abs(dx) < 1){
+		if (abs(dx) > 0){
+			x += (dx / 2);
+			dx /= 2;
+		} else if (abs(dy) > 0){
+			y += (dy / 2);
+			dy /= 2;
+		} else {
 			state = PLAYER_STATE.in_control;
 		}
 		
@@ -14,6 +19,7 @@ switch (state){
 	case PLAYER_STATE.in_control:
 		#region
 		sprite_index = spr_player_walk;
+		image_speed = 1;
 		
 		// horizontal movement
 		dx = (keyboard_check(vk_right) - keyboard_check(vk_left)) * move_speed;
@@ -28,7 +34,7 @@ switch (state){
 			if (dx == 0) {
 				if (instance_place(x + move_speed, y, obj_enemy)){
 					global.playerHealth -= instance_place(x + move_speed, y, obj_enemy).damage;
-					dx = 1 * move_speed; // left of enemy
+					dx = move_speed; // left of enemy
 				}
 			} else {
 				if (instance_place(x + dx, y, obj_enemy)){
@@ -37,14 +43,14 @@ switch (state){
 			}
 			
 			dx = -10* dx;
-			//state = PLAYER_STATE.hurt;
+			state = PLAYER_STATE.hurt;
 			
 		} else if (!keyboard_check(vk_space) and 
 					(place_meeting(x - move_speed, y, obj_enemy) and instance_place(x - move_speed, y, obj_enemy).state != ENEMY_STATE.dead)){
 			if (dx == 0) {
 				if (instance_place(x - move_speed, y, obj_enemy)){
 					global.playerHealth -= instance_place(x - move_speed, y, obj_enemy).damage;
-					dx = -1 * move_speed; // left of enemy
+					dx = -move_speed; // left of enemy
 				}
 			} else {
 				if (instance_place(x + dx, y, obj_enemy)){
@@ -53,14 +59,14 @@ switch (state){
 			}
 			
 			dx = -10 * dx;
-			//state = PLAYER_STATE.hurt;
+			state = PLAYER_STATE.hurt;
 			
 		} else if (!keyboard_check(vk_space) and 
 					(place_meeting(x, y + move_speed, obj_enemy) and instance_place(x, y + move_speed, obj_enemy).state != ENEMY_STATE.dead)){
 			if (dy == 0) {
 				if (instance_place(x, y + move_speed, obj_enemy)){
 					global.playerHealth -= instance_place(x, y + move_speed, obj_enemy).damage;
-					dy = 1 * move_speed; // left of enemy
+					dy = move_speed; // below enemy
 				}
 			} else {
 				if (instance_place(x, y + dy, obj_enemy)){
@@ -69,14 +75,14 @@ switch (state){
 			}
 			
 			dy = -10 * dy;
-			//state = PLAYER_STATE.hurt;
+			state = PLAYER_STATE.hurt;
 			
 		} else if (!keyboard_check(vk_space) and 
 					(place_meeting(x, y - move_speed, obj_enemy) and instance_place(x, y - move_speed, obj_enemy).state != ENEMY_STATE.dead)){
 			if (dx == 0) {
 				if (instance_place(x, y - move_speed, obj_enemy)){
 					global.playerHealth -= instance_place(x, y - move_speed, obj_enemy).damage;
-					dy = -1 * move_speed; // left of enemy
+					dy = -move_speed; // above enemy
 				}
 			} else {
 				if (instance_place(x, y + dy, obj_enemy)){
@@ -85,77 +91,46 @@ switch (state){
 			}
 			
 			dy = -10 * dy;
-			//state = PLAYER_STATE.hurt;
+			state = PLAYER_STATE.hurt;
 			
-		} 
+		} else {
+			// horizontal collision
+			if (place_meeting (x + dx, y, obj_collidable)){ dx = 0; }
+			// vertical collision
+			if (place_meeting (x, y + dy, obj_collidable)){ dy = 0; }
 		
+		
+			x += dx;
+			y += dy;
+		}
 		
 		// horizontal collision
-		if (place_meeting (x + dx, y, obj_collidable)){  dx = 0; }
+		if (place_meeting (x + dx, y, obj_collidable)){ dx = 0; }
 		// vertical collision
 		if (place_meeting (x, y + dy, obj_collidable)){ dy = 0; }
 		
 		
-		x += dx;
-		y += dy;
-		
 		if (!keyboard_check(vk_up) and !keyboard_check(vk_down) and !keyboard_check(vk_left) and !keyboard_check(vk_right)) {
 			sprite_index = spr_player_idle;
+			image_speed = 1;
 		}
+		
+		// Player attacks
+		if (keyboard_check(vk_space)){
+			image_index = 0;
+			state = PLAYER_STATE.attack;
+			}
 		
 		break;
 		#endregion
 		
+	case PLAYER_STATE.attack:
+	#region
+		sprite_index = spr_player_attack_3;
+		image_speed = 3;
+	break;
+	#endregion
+	
 	default: 
 		throw ("invalid state");
 }
-
-//if (state == PLAYER_STATE.in_control and place_meeting(x, y, obj_enemy) and !obj_enemy.alive){
-//	dx = -dx;
-//	state = PLAYER_STATE.hurt;
-//}
-
-
-/*
-#region
-if keyboard_check(vk_down) {
-	if (!place_meeting(x,y+move_speed,obj_collidable)) {
-		y = y + move_speed;
-	}
-	sprite_index = spr_player_walk
-	show_debug_message("down")
-}
-
-if keyboard_check(vk_left) {
-	if (!place_meeting(x-move_speed,y,obj_collidable)) {
-		x = x - move_speed;
-	}
-	image_xscale = -1
-	sprite_index = spr_player_walk
-	show_debug_message("left")
-	
-} 
-
-if keyboard_check(vk_right) {
-	if (!place_meeting(x+move_speed,y,obj_collidable)) {
-		x = x + move_speed;
-	}
-	image_xscale = 1
-	sprite_index = spr_player_walk
-	show_debug_message("right")
-} 
-
-
-if keyboard_check(vk_up) {
-	if (!place_meeting(x,y-move_speed,obj_collidable)) {
-		y = y - move_speed;
-	}
-	sprite_index = spr_player_walk
-	show_debug_message("up")
-}
-
-if (!keyboard_check(vk_up) and !keyboard_check(vk_down) and !keyboard_check(vk_left) and !keyboard_check(vk_right)) {
-	sprite_index = spr_player_idle
-}
-#endregion
-*/
