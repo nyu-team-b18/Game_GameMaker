@@ -63,7 +63,6 @@ switch(state){
 	break;
 	#endregion
 
-	
 	case ENEMY_STATE.dead:
 	#region Dead enemy (inactive)
 	sprite_index = fire_elem_death;

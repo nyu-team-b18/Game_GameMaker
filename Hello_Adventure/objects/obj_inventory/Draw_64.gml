@@ -4,7 +4,7 @@ if (room != rm_start) {
 		spr_inv_base,
 		0,
 		(INVENTORY_SLOTS * 29) / 2,
-		250,
+		260,
 		INVENTORY_SLOTS * 29,
 		36
 	)
@@ -12,14 +12,14 @@ if (room != rm_start) {
 	for (var i = 0; i < INVENTORY_SLOTS; i += 1)
 	{
 		var xx = ((INVENTORY_SLOTS * 29) / 2) + (i mod rowLength) * 28 + 19
-		var yy = 250 + (i div rowLength) * 30 + 17
+		var yy = 260 + (i div rowLength) * 30 + 17
 		draw_sprite(spr_inv_slot, 0, xx, yy)
 	}
 	
 	for (var i = 0; i < array_length(inventory); i += 1)
 	{
 		var xx = ((INVENTORY_SLOTS * 29) / 2) + (i mod rowLength) * 28 + 19
-		var yy = 250 + (i div rowLength) * 30 + 17
+		var yy = 260 + (i div rowLength) * 30 + 17
 		draw_sprite(spr_inv_items, inventory[i].inv_image_index, xx, yy)
 	}
 	
@@ -88,7 +88,7 @@ if (room != rm_start) {
 	
 	// slot position
 	var xx = ((INVENTORY_SLOTS * 29) / 2) + (index_value mod rowLength) * 28 + 19
-	var yy = 250 + (index_value div rowLength) * 30 + 17
+	var yy = 260 + (index_value div rowLength) * 30 + 17
 	
 	
 	if array_length(inventory) > 0 and index_value != -1 {

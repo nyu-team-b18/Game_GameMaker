@@ -19,6 +19,7 @@ switch (state){
 	case PLAYER_STATE.in_control:
 		#region
 		sprite_index = spr_player_walk;
+		image_speed = 1;
 		
 		// horizontal movement
 		dx = (keyboard_check(vk_right) - keyboard_check(vk_left)) * move_speed;
@@ -111,17 +112,22 @@ switch (state){
 		
 		if (!keyboard_check(vk_up) and !keyboard_check(vk_down) and !keyboard_check(vk_left) and !keyboard_check(vk_right)) {
 			sprite_index = spr_player_idle;
+			image_speed = 1;
 		}
 		
 		// Player attacks
-		//if (keyboard_check(vk_space)){ state = PLAYER_STATE.attack; }
+		if (keyboard_check(vk_space)){
+			image_index = 0;
+			state = PLAYER_STATE.attack;
+			}
 		
 		break;
 		#endregion
 		
 	case PLAYER_STATE.attack:
 	#region
-	
+		sprite_index = spr_player_attack_3;
+		image_speed = 3;
 	break;
 	#endregion
 	
