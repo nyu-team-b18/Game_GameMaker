@@ -2,12 +2,15 @@
 function InventoryDrop(inv, index){
 	if array_length(global.inventory_id.inventory) > 0 and index < array_length(global.inventory_id.inventory) {
 		var obj_to_create = global.inventory_id.item_array[inv[index].inv_image_index]
-		instance_create_layer(
+		
+		var item = instance_create_layer(
 			obj_player.x,
 			obj_player.y,
 			"Instances",
 			obj_to_create
 		)
+		
+		item.image_xscale = obj_player.image_xscale * -1
 		array_delete(inv, index, 1);
 	}	
 }

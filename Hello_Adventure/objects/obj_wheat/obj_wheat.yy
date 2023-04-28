@@ -1,19 +1,21 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_animal_spots",
+  "name": "obj_wheat",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Level 1 Objs",
-    "path": "folders/Objects/Level 1 Objs.yy",
+    "name": "Inv Items",
+    "path": "folders/Objects/Inv Items.yy",
   },
-  "parentObjectId": null,
-  "persistent": false,
+  "parentObjectId": {
+    "name": "obj_inv_items",
+    "path": "objects/obj_inv_items/obj_inv_items.yy",
+  },
+  "persistent": true,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
   "physicsFriction": 0.2,
@@ -28,10 +30,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_animal_spot",
-    "path": "sprites/spr_animal_spot/spr_animal_spot.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
-  "visible": false,
+  "visible": true,
 }

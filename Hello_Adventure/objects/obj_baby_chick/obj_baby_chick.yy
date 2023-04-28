@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_animal_spots",
+  "name": "obj_baby_chick",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
@@ -9,11 +9,14 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Level 1 Objs",
-    "path": "folders/Objects/Level 1 Objs.yy",
+    "name": "Inv Animals",
+    "path": "folders/Objects/Inv Items/Inv Animals.yy",
   },
-  "parentObjectId": null,
-  "persistent": false,
+  "parentObjectId": {
+    "name": "obj_level_animals",
+    "path": "objects/obj_level_animals/obj_level_animals.yy",
+  },
+  "persistent": true,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
   "physicsFriction": 0.2,
@@ -28,10 +31,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_animal_spot",
-    "path": "sprites/spr_animal_spot/spr_animal_spot.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
-  "visible": false,
+  "visible": true,
 }
