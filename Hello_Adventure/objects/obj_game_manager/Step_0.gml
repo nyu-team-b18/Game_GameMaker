@@ -1,13 +1,19 @@
+draw_set_font(silver_font);
+
+if global.l1state == "pregame" or global.l1state == "path" or global.l1state == "story" {
+	global.inventory_id.visible = false
+}
+
 // START TO ROOM 1
 // USE THIS CODE TO SWITCH ROOMS FOR TESTING
 // comment out the if statement needed to start at the needed room
 
 //room 1
-//if (room == rm_start and keyboard_check(vk_enter)) {
-//	room_goto(rm_level_1)
-//	obj_player.x = 20
-//	obj_player.y = 100
-//}
+if (room == rm_start and keyboard_check(vk_enter)) {
+	room_goto(rm_level_1)
+	obj_player.x = -30
+	obj_player.y = 110
+}
 
 // room 3a
 //if (room == rm_start and keyboard_check(vk_enter)) {

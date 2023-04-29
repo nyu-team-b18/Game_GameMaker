@@ -1,9 +1,6 @@
-//if global.l1state == "story" {
-//	// do stuff for story
-//}
 
-
-if obj_animal_spawner.curr_spawn_count == calmed_animal_count {
+if room == rm_level_1 {
+	if obj_animal_spawner.curr_spawn_count == calmed_animal_count {
 	obj_animal_spawner.spawn = true
 	calmed_animal_count = 0
 	
@@ -37,4 +34,5 @@ if obj_animal_spawner.curr_spawn_count == calmed_animal_count {
 		obj_animal_spawner.curr_spawn_count = 8
 		obj_animal_spawner.spawn_count = 8
 	}
+}
 }

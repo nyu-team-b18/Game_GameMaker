@@ -1,4 +1,28 @@
+if global.l1state == "pregame" and x == -30 and y == 110 {
+	state = PLAYER_STATE.story;
+	sprite_index = spr_player_walk;
+	image_xscale = 1
+	path_start(path, 1, path_action_stop, false)
+} 
+
+//if path_position == 1 {
+////	 change to idle when exists
+//	state = PLAYER_STATE.in_control;
+//}
+
+
+
 switch (state){
+	case PLAYER_STATE.story:
+		#region
+		if path_position == 1 {
+			sprite_index = spr_player_idle
+			global.l1state = "story"
+			state = PLAYER_STATE.in_control;
+		}
+		break;
+		#endregion
+		
 	case PLAYER_STATE.hurt:
 		#region
 		sprite_index = spr_player_walk

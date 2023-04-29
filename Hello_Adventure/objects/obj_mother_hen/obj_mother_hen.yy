@@ -1,21 +1,19 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_berry",
+  "name": "obj_mother_hen",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Inv Items",
-    "path": "folders/Objects/Inv Items.yy",
+    "name": "Level 1 Objs",
+    "path": "folders/Objects/Level 1 Objs.yy",
   },
-  "parentObjectId": {
-    "name": "obj_inv_items",
-    "path": "objects/obj_inv_items/obj_inv_items.yy",
-  },
-  "persistent": true,
+  "parentObjectId": null,
+  "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
   "physicsFriction": 0.2,
@@ -30,7 +28,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "white_brown_chicken_idle",
+    "path": "sprites/white_brown_chicken_idle/white_brown_chicken_idle.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }
