@@ -76,6 +76,7 @@
     {"id":{"name":"obj_UI","path":"objects/obj_UI/obj_UI.yy",},},
     {"id":{"name":"Winter_Farm","path":"tilesets/Winter_Farm/Winter_Farm.yy",},},
     {"id":{"name":"obj_game_manager","path":"objects/obj_game_manager/obj_game_manager.yy",},},
+    {"id":{"name":"player_follows_path","path":"paths/player_follows_path/player_follows_path.yy",},},
     {"id":{"name":"front","path":"sprites/front/front.yy",},},
     {"id":{"name":"baby_black_cow_idle","path":"sprites/baby_black_cow_idle/baby_black_cow_idle.yy",},},
     {"id":{"name":"back_1","path":"sprites/back_1/back_1.yy",},},

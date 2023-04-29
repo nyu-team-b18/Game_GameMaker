@@ -1,0 +1,1 @@
+// stop automatic drawing with empty draw event

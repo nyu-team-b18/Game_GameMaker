@@ -1,7 +1,9 @@
 draw_set_font(silver_font);
 
-if global.l1state == "pregame" or global.l1state == "path" or global.l1state == "story" {
+if global.l1state == "pregame" or global.l1state == "path" or global.l1state == "d1" or global.l1state == "story" {
 	global.inventory_id.visible = false
+} else {
+	global.inventory_id.visible = true
 }
 
 // START TO ROOM 1
@@ -44,14 +46,14 @@ if (room == rm_start and keyboard_check(vk_enter)) {
 //}
 
 //room 3e
-if (room == rm_start and keyboard_check(vk_enter)) {
-	room_goto(rm_level_3_E)
-	obj_player.x = 740
-	obj_player.y = 445
-}
+//if (room == rm_start and keyboard_check(vk_enter)) {
+//	room_goto(rm_level_3_E)
+//	obj_player.x = 740
+//	obj_player.y = 445
+//}
 
 // ROOM 1 TO 3A SWITCH
-if (room == rm_level_1 and obj_player.x >= 700 and obj_player.x <= 780 and obj_player.y >= 475) {
+if (room == rm_level_1 and global.l1state = "DONE" and obj_player.x >= 700 and obj_player.x <= 780 and obj_player.y >= 475) {
 	room_goto(rm_level_3_A)
 	obj_player.x = 800
 	obj_player.y = 32

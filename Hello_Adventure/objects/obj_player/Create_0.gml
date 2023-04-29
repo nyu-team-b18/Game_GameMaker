@@ -6,7 +6,7 @@ knockback_fr = .9;
 
 
 enum PLAYER_STATE{
-	story,
+	not_in_control,
 	in_control,
 	hurt,
 	attack
