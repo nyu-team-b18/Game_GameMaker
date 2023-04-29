@@ -1,6 +1,12 @@
 {
-  "FolderOrderSettings": [],
+  "FolderOrderSettings": [
+    {"name":"Bubbles","order":3,"path":"folders/Sprites/UI/Bubbles.yy",},
+  ],
   "ResourceOrderSettings": [
     {"name":"player_follows_path","order":1,"path":"paths/player_follows_path/player_follows_path.yy",},
+    {"name":"spr_exclaim_bubble","order":2,"path":"sprites/spr_exclaim_bubble/spr_exclaim_bubble.yy",},
+    {"name":"spr_berry_bubble","order":1,"path":"sprites/spr_berry_bubble/spr_berry_bubble.yy",},
+    {"name":"obj_hunger_bubble","order":1,"path":"objects/obj_hunger_bubble/obj_hunger_bubble.yy",},
+    {"name":"zzz","order":3,"path":"sprites/zzz/zzz.yy",},
   ],
 }

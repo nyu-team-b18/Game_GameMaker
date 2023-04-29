@@ -24,7 +24,7 @@ if path_position == 1 {
 	}
 }
 
-if path == "DONE" {state = PLAYER_STATE.in_control;}
+if global.l1state == "l1w1" {state = PLAYER_STATE.in_control;}
 
 
 switch (state){

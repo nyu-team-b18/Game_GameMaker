@@ -1,5 +1,7 @@
 event_inherited();
 
+hungry = true
+
 image_speed = 1
 spd = choose(1, -1);
 
