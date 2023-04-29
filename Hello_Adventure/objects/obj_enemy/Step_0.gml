@@ -23,7 +23,7 @@ switch(state){
 	
 	if (!keyboard_check(vk_space) and place_meeting(x + obj_player.dx, y, obj_player)){
 		spd *= -1;
-		alarm[0] = 120 - alarm[0];
+		alarm[0] = 121 - alarm[0];
 	} 
 
 	break;
@@ -51,7 +51,7 @@ switch(state){
 	
 	if (!keyboard_check(vk_space) and place_meeting(x, y + obj_player.dy, obj_player)){
 		spd *= -1;
-		alarm[0] = 120 - alarm[0];
+		alarm[0] = 121 - alarm[0];
 	}  
 	
 	break;
@@ -67,6 +67,15 @@ switch(state){
 	#region Dead enemy (inactive)
 	sprite_index = fire_elem_death;
 	if animation_hit_frame(7){ image_index = 7; }
+	if (not killed){
+		global.curr_kills += 1;
+		killed = true;
+	}
+	if (global.curr_kills == global.kills and global.must_place){
+		instance_create_layer(x, y, "Instances", obj_key);
+		global.must_place = false;
+	}
+	
 	break;
 	#endregion
 	
@@ -75,7 +84,7 @@ switch(state){
 
 }
 
-if ( keyboard_check(vk_space) and 
+if ( obj_player.state == PLAYER_STATE.attack and 
 	(place_meeting(x + obj_player.move_speed, y, obj_player) or
 	 place_meeting(x - obj_player.move_speed, y, obj_player) or
 	 place_meeting(x, y - obj_player.move_speed, obj_player) or

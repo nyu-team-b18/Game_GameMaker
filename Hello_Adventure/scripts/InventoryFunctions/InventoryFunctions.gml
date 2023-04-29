@@ -18,7 +18,11 @@ function InventoryDrop(inv, index){
 // use item (del from inv and dont return to world)
 function InventoryUse(inv, index){
 	if array_length(global.inventory_id.inventory) > 0 and index < array_length(global.inventory_id.inventory) {
-		array_delete(inv, index, 1);
+		//if (global.inventory_id.item_array[inv[index].inv_image_index] == obj_key){
+			global.key_used = true;
+			array_delete(inv, index, 1);
+			instance_destroy(instance_find(obj_door_lock, 0));
+		//}
 	}	
 }
 
