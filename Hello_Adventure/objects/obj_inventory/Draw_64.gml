@@ -11,18 +11,20 @@ if (room != rm_start) {
 
 	for (var i = 0; i < INVENTORY_SLOTS; i += 1)
 	{
-		var xx = ((INVENTORY_SLOTS * 29) / 2) + (i mod rowLength) * 28 + 19
-		var yy = 260 + (i div rowLength) * 30 + 17
+		var xx = ((INVENTORY_SLOTS * 29) / 2) + (i mod row_length) * 28 + 19
+		var yy = 260 + (i div row_length) * 30 + 17
 		draw_sprite(spr_inv_slot, 0, xx, yy)
 	}
 	
+	#region Items
 	for (var i = 0; i < array_length(inventory); i += 1)
 	{
-		var xx = ((INVENTORY_SLOTS * 29) / 2) + (i mod rowLength) * 28 + 19
-		var yy = 260 + (i div rowLength) * 30 + 17
-		draw_sprite(spr_inv_items, inventory[i].inv_image_index, xx, yy)
+		var xx = ((INVENTORY_SLOTS * 29) / 2) + (i mod row_length) * 28 + 19
+		var yy = 260 + (i div row_length) * 30 + 17
+		draw_sprite(spr_inv_items, inventory[i].spr, xx, yy)
 	}
-	
+	#endregion
+	#region Keys (0-9)
 	// given the key input (0-9), determine highlighted slot
 	if keyboard_check_pressed(ord("1")) {
 		if array_length(inventory) > 1 { // if the value exists
@@ -87,9 +89,9 @@ if (room != rm_start) {
 	} 
 	
 	// slot position
-	var xx = ((INVENTORY_SLOTS * 29) / 2) + (index_value mod rowLength) * 28 + 19
-	var yy = 260 + (index_value div rowLength) * 30 + 17
-	
+	var xx = ((INVENTORY_SLOTS * 29) / 2) + (index_value mod row_length) * 28 + 19
+	var yy = 260 + (index_value div row_length) * 30 + 17
+
 	
 	if array_length(inventory) > 0 and index_value != -1 {
 		// draw selected ui sprite
@@ -98,5 +100,5 @@ if (room != rm_start) {
 	} else {
 		selected_index = -1
 	}
-	
+	#endregion
 }

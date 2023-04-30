@@ -124,7 +124,7 @@ switch (state){
 		#endregion
 		
 	case PLAYER_STATE.attack:
-	#region ATTACK
+		#region ATTACK
 		sprite_index = spr_player_attack_3;
 		image_speed = 3;
 		#region MOVEMENT

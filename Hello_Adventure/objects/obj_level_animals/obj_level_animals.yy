@@ -17,7 +17,7 @@
     "name": "obj_inv_items",
     "path": "objects/obj_inv_items/obj_inv_items.yy",
   },
-  "persistent": true,
+  "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
   "physicsFriction": 0.2,

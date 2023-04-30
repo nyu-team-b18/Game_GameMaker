@@ -5,3 +5,5 @@
 event_inherited();
 inv_image_index = 2
 image_index = inv_image_index
+
+item = global.items[ITEM.COPY_POTION];

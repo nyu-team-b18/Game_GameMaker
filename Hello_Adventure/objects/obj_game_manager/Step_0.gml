@@ -10,13 +10,13 @@
 //}
 
 // room 3a
-if (room == rm_start and keyboard_check(vk_enter)) {
-	room_goto(rm_level_3_A)
-	obj_player.x = 800
-	obj_player.y = 32
-}
+//if (room == rm_start and keyboard_check(vk_enter)) {
+//	room_goto(rm_level_3_A)
+//	obj_player.x = 800
+//	obj_player.y = 32
+//}
 
-// room 3b
+ //room 3b
 //if (room == rm_start and keyboard_check(vk_enter)) {
 //	room_goto(rm_level_3_B)
 //	obj_player.x = 600
@@ -24,11 +24,11 @@ if (room == rm_start and keyboard_check(vk_enter)) {
 //}
 
  //room 3c
-//if (room == rm_start and keyboard_check(vk_enter)) {
-//	room_goto(rm_level_3_C)
-//	obj_player.x = 593
-//	obj_player.y = 108
-//}
+if (room == rm_start and keyboard_check(vk_enter)) {
+	room_goto(rm_level_3_C)
+	obj_player.x = 593
+	obj_player.y = 108
+}
 
  //room 3d
 //if (room == rm_start and keyboard_check(vk_enter)) {
@@ -108,28 +108,32 @@ if (room == rm_level_3_C and obj_player.x >= 935 and obj_player.x <= 954 and obj
 	obj_player.y = 285
 }
 
+/*
 // ROOM 3D TO 3C
 if (room == rm_level_3_D and obj_player.x >= 90 and obj_player.x <= 124 and obj_player.y >= 320) {
 	room_goto(rm_level_3_C)
 	obj_player.x = 945
 	obj_player.y = 900
 }
-
+*/
 
 // ROOM 3D TO 3E
-if (room == rm_level_3_D and obj_player.x >= 620 and obj_player.y >= 113 and obj_player.y <= 176) {
-	room_goto(rm_level_3_E)
-	obj_player.x = 736
-	obj_player.y = 440
+if (global.has_chicks){
+	if (room == rm_level_3_D and obj_player.x >= 620 and obj_player.y >= 113 and obj_player.y <= 176) {
+		room_goto(rm_level_3_E)
+		obj_player.x = 736
+		obj_player.y = 440
+	}
 }
 
-
+/*
 // ROOM 3E TO 3D
 if (room == rm_level_3_E and obj_player.x >= 700 and obj_player.x <= 780 and obj_player.y >= 475) {
 	room_goto(rm_level_3_D)
 	obj_player.x = 570
 	obj_player.y = 150
 }
+*/
 #endregion
 
 #region UNLOCK DOOR
@@ -138,3 +142,4 @@ if (global.key_used){
 	layer_set_visible(layer_get_id("Door_Open"), true);
 }
 #endregion
+
