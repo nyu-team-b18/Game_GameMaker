@@ -1,6 +1,6 @@
 switch (state){
 	case PLAYER_STATE.hurt:
-		#region
+		#region HURT
 		sprite_index = spr_player_walk
 		
 		if (abs(dx) > 0){
@@ -17,7 +17,7 @@ switch (state){
 		#endregion
 		
 	case PLAYER_STATE.in_control:
-		#region
+		#region IN CONTROL
 		sprite_index = spr_player_walk;
 		image_speed = 1;
 		
@@ -28,7 +28,7 @@ switch (state){
 		// vertical movement
 		dy = (keyboard_check(vk_down) - keyboard_check(vk_up)) * move_speed;
 		
-		// enemy collision
+		#region ENEMY COLLISIONS
 		if (!keyboard_check(vk_space) and 
 			(place_meeting(x + move_speed, y, obj_enemy) and instance_place(x + move_speed, y, obj_enemy).state != ENEMY_STATE.dead)) {
 			if (dx == 0) {
@@ -93,7 +93,10 @@ switch (state){
 			dy = -10 * dy;
 			state = PLAYER_STATE.hurt;
 			
-		} else {
+		} 
+		#endregion 
+		#region COLLISIONS
+		else {
 			// horizontal collision
 			if (place_meeting (x + dx, y, obj_collidable)){ dx = 0; }
 			// vertical collision
@@ -103,19 +106,15 @@ switch (state){
 			x += dx;
 			y += dy;
 		}
-		
-		// horizontal collision
-		if (place_meeting (x + dx, y, obj_collidable)){ dx = 0; }
-		// vertical collision
-		if (place_meeting (x, y + dy, obj_collidable)){ dy = 0; }
-		
-		
+		#endregion
+			
+		// IDLE
 		if (!keyboard_check(vk_up) and !keyboard_check(vk_down) and !keyboard_check(vk_left) and !keyboard_check(vk_right)) {
 			sprite_index = spr_player_idle;
 			image_speed = 1;
 		}
 		
-		// Player attacks
+		// PLAYER ATTACKS
 		if (keyboard_check(vk_space)){
 			image_index = 0;
 			state = PLAYER_STATE.attack;
@@ -125,9 +124,25 @@ switch (state){
 		#endregion
 		
 	case PLAYER_STATE.attack:
-	#region
+		#region ATTACK
 		sprite_index = spr_player_attack_3;
 		image_speed = 3;
+		#region MOVEMENT
+		// horizontal movement
+		dx = (keyboard_check(vk_right) - keyboard_check(vk_left)) * move_speed;
+		if (dx != 0){ image_xscale = sign(dx); }
+		
+		// vertical movement
+		dy = (keyboard_check(vk_down) - keyboard_check(vk_up)) * move_speed;
+		
+		// horizontal collision
+		if (place_meeting (x + dx, y, obj_collidable)){ dx = 0; }
+		// vertical collision
+		if (place_meeting (x, y + dy, obj_collidable)){ dy = 0; }
+		
+		x += dx;
+		y += dy;
+		#endregion
 	break;
 	#endregion
 	

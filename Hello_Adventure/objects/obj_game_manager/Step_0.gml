@@ -1,7 +1,7 @@
+#region ROOM CONTROL
 // START TO ROOM 1
 // USE THIS CODE TO SWITCH ROOMS FOR TESTING
 // comment out the if statement needed to start at the needed room
-
 //room 1
 //if (room == rm_start and keyboard_check(vk_enter)) {
 //	room_goto(rm_level_1)
@@ -16,19 +16,19 @@
 //	obj_player.y = 32
 //}
 
-// room 3b
+ //room 3b
 //if (room == rm_start and keyboard_check(vk_enter)) {
 //	room_goto(rm_level_3_B)
 //	obj_player.x = 600
 //	obj_player.y = 21
 //}
 
-// room 3c
-//if (room == rm_start and keyboard_check(vk_enter)) {
-//	room_goto(rm_level_3_C)
-//	obj_player.x = 593
-//	obj_player.y = 102
-//}
+ //room 3c
+if (room == rm_start and keyboard_check(vk_enter)) {
+	room_goto(rm_level_3_C)
+	obj_player.x = 593
+	obj_player.y = 108
+}
 
  //room 3d
 //if (room == rm_start and keyboard_check(vk_enter)) {
@@ -38,11 +38,11 @@
 //}
 
 //room 3e
-if (room == rm_start and keyboard_check(vk_enter)) {
-	room_goto(rm_level_3_E)
-	obj_player.x = 740
-	obj_player.y = 445
-}
+//if (room == rm_start and keyboard_check(vk_enter)) {
+//	room_goto(rm_level_3_E)
+//	obj_player.x = 740
+//	obj_player.y = 445
+//}
 
 // ROOM 1 TO 3A SWITCH
 if (room == rm_level_1 and obj_player.x >= 700 and obj_player.x <= 780 and obj_player.y >= 475) {
@@ -94,8 +94,52 @@ if (room == rm_level_3_B and obj_player.x >= 868 and obj_player.x <= 890 and obj
 }
 
 // ROOM 3C TO 3B SWITCH -ALTERNATIVE-
-if (room == rm_level_3_C and obj_player.x >= 965 and obj_player.x <= 990 and obj_player.y >= 610 and obj_player.y <= 655) {
+if (room == rm_level_3_C and obj_player.x >= 955 and obj_player.x <= 990 and obj_player.y >= 610 and obj_player.y <= 645) {
 	room_goto(rm_level_3_B)
 	obj_player.x = 880
 	obj_player.y = 410
 }
+
+
+// ROOM 3C TO 3D
+if (room == rm_level_3_C and obj_player.x >= 935 and obj_player.x <= 954 and obj_player.y >= 862 and obj_player.y <= 872) {
+	room_goto(rm_level_3_D)
+	obj_player.x = 103
+	obj_player.y = 285
+}
+
+/*
+// ROOM 3D TO 3C
+if (room == rm_level_3_D and obj_player.x >= 90 and obj_player.x <= 124 and obj_player.y >= 320) {
+	room_goto(rm_level_3_C)
+	obj_player.x = 945
+	obj_player.y = 900
+}
+*/
+
+// ROOM 3D TO 3E
+if (global.has_chicks){
+	if (room == rm_level_3_D and obj_player.x >= 620 and obj_player.y >= 113 and obj_player.y <= 176) {
+		room_goto(rm_level_3_E)
+		obj_player.x = 736
+		obj_player.y = 440
+	}
+}
+
+/*
+// ROOM 3E TO 3D
+if (room == rm_level_3_E and obj_player.x >= 700 and obj_player.x <= 780 and obj_player.y >= 475) {
+	room_goto(rm_level_3_D)
+	obj_player.x = 570
+	obj_player.y = 150
+}
+*/
+#endregion
+
+#region UNLOCK DOOR
+if (global.key_used){
+	layer_set_visible(layer_get_id("Door_Closed"), false);
+	layer_set_visible(layer_get_id("Door_Open"), true);
+}
+#endregion
+

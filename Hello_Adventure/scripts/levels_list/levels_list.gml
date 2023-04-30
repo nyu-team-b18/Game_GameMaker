@@ -1,0 +1,8 @@
+enum LEVEL{
+	START,
+	LEVEL1,
+	LEVEL2,
+	LEVEL3,
+	ENEMY_LAIR,
+	END
+}
