@@ -5,3 +5,5 @@
 event_inherited();
 inv_image_index = 8
 image_index = inv_image_index
+
+item = global.items[ITEM.WHEAT];

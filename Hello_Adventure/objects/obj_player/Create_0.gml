@@ -14,5 +14,4 @@ enum PLAYER_STATE{
 
 state = PLAYER_STATE.in_control;
 sprite_index = spr_player_walk;
-
 path = player_story_path

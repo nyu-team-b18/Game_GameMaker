@@ -9,3 +9,4 @@ enum ENEMY_STATE{
 }
  
 state = ENEMY_STATE.in_place;
+killed = false;
