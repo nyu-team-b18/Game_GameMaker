@@ -27,8 +27,8 @@
   "nineSlice": null,
   "origin": 7,
   "parent": {
-    "name": "ui sheets",
-    "path": "folders/Sprites/Sheets/ui sheets.yy",
+    "name": "Bubbles",
+    "path": "folders/Sprites/UI/Bubbles.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

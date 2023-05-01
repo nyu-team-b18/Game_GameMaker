@@ -1,5 +1,11 @@
 event_inherited();
 
+if !alarm_is_set and safe {
+	alarm[1] = 300
+	alarm_is_set = true
+	show_hunger = true
+}
+
 if (   place_meeting(x+2, y+2, obj_collidable) 
 	or place_meeting(x-2, y-2, obj_collidable)
 	or place_meeting(x+2, y-2, obj_collidable)
@@ -14,7 +20,7 @@ if (   place_meeting(x+2, y+2, obj_animal_farm_collide)
 	spd *= -1;
 }
 
-if place_meeting(x,y,obj_animal_spots) {
+if place_meeting(x,y,obj_animal_spots) and !hungry {
 	spd = 0
 	if not safe {
 		obj_lvl1_manager.calmed_animal_count += 1

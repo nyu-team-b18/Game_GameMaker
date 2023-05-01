@@ -10,8 +10,7 @@ global.playerStamina = global.playerStaminaMax;
 global.iUI = instance_create_layer(0, 0, "GUI_he_sta", obj_UI);
 global.inventory_id = instance_create_layer(x, y, "GUI", obj_inventory);
 
-global.l1state = "story"
-
+global.l1state = "pregame"
 global.kills = irandom(20);
 global.kills = 0;
 global.curr_kills = -1;

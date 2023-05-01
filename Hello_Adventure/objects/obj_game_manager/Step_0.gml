@@ -1,13 +1,23 @@
+draw_set_font(silver_font);
+
+#region INVENTORY VISIBILITY
+if global.l1state == "pregame" or global.l1state == "path" or global.l1state == "d1" or global.l1state == "story" {
+	global.inventory_id.visible = false
+} else {
+	global.inventory_id.visible = true
+}
+#endregion
+
 #region ROOM CONTROL
 // START TO ROOM 1
 // USE THIS CODE TO SWITCH ROOMS FOR TESTING
 // comment out the if statement needed to start at the needed room
 //room 1
-//if (room == rm_start and keyboard_check(vk_enter)) {
-//	room_goto(rm_level_1)
-//	obj_player.x = 20
-//	obj_player.y = 100
-//}
+if (room == rm_start and keyboard_check(vk_enter)) {
+	room_goto(rm_level_1)
+	obj_player.x = -30
+	obj_player.y = 110
+}
 
 // room 3a
 //if (room == rm_start and keyboard_check(vk_enter)) {
@@ -45,7 +55,7 @@ if (room == rm_start and keyboard_check(vk_enter)) {
 //}
 
 // ROOM 1 TO 3A SWITCH
-if (room == rm_level_1 and obj_player.x >= 700 and obj_player.x <= 780 and obj_player.y >= 475) {
+if (room == rm_level_1 and global.l1state = "DONE" and obj_player.x >= 700 and obj_player.x <= 780 and obj_player.y >= 475) {
 	room_goto(rm_level_3_A)
 	obj_player.x = 800
 	obj_player.y = 32
