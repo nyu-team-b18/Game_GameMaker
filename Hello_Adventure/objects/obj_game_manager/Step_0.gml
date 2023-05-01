@@ -137,9 +137,11 @@ if (room == rm_level_3_E and obj_player.x >= 700 and obj_player.x <= 780 and obj
 #endregion
 
 #region UNLOCK DOOR
-if (global.key_used){
+if (global.key_used == 2 and room == rm_level_3_C){
 	layer_set_visible(layer_get_id("Door_Closed"), false);
 	layer_set_visible(layer_get_id("Door_Open"), true);
+	instance_destroy(instance_find(obj_door_lock, 0));
 }
 #endregion
+
 
