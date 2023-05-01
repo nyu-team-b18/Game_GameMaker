@@ -1,23 +1,24 @@
 draw_set_font(silver_font);
 
 #region INVENTORY VISIBILITY
-if global.l1state == "pregame" or global.l1state == "path" or global.l1state == "d1" or global.l1state == "story" {
-	global.inventory_id.visible = false
-} else {
-	global.inventory_id.visible = true
-}
+//if global.l1state == "pregame" or global.l1state == "path" or global.l1state == "d1" or global.l1state == "story" {
+//	global.inventory_id.visible = false
+//} else {
+//	global.inventory_id.visible = true
+//}
 #endregion
 
 #region ROOM CONTROL
 // START TO ROOM 1
 // USE THIS CODE TO SWITCH ROOMS FOR TESTING
 // comment out the if statement needed to start at the needed room
+
 //room 1
-if (room == rm_start and keyboard_check(vk_enter)) {
-	room_goto(rm_level_1)
-	obj_player.x = -30
-	obj_player.y = 110
-}
+//if (room == rm_start and keyboard_check(vk_enter)) {
+//	room_goto(rm_level_1)
+//	obj_player.x = -30
+//	obj_player.y = 110
+//}
 
 // room 3a
 //if (room == rm_start and keyboard_check(vk_enter)) {
@@ -153,5 +154,3 @@ if (global.key_used == 2 and room == rm_level_3_C){
 	instance_destroy(instance_find(obj_door_lock, 0));
 }
 #endregion
-
-
