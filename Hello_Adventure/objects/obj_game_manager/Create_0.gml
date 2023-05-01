@@ -15,7 +15,7 @@ global.kills = irandom(20);
 global.kills = 0;
 global.curr_kills = -1;
 global.must_place = true;
-global.key_used = false;
+global.key_used = 0; 
 
 global.has_chicks = false;
 

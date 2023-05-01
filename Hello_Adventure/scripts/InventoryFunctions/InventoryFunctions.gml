@@ -23,14 +23,13 @@ function InventoryUse(inv, index){
 		// KEY
 		if (inv[index].obj == "obj_key" and 
 			position_meeting(obj_player.x, obj_player.y, instance_find(obj_can_unlock, 0))){
-			global.key_used = true;
+			global.key_used += 1;
 			array_delete(inv, index, 1);
-			instance_destroy(instance_find(obj_door_lock, 0));
 		}
 		
-		var item;
+		
 		// COPY POTION
-		if (inv[index].obj == "obj_copy_potion"){
+		else if (inv[index].obj == "obj_copy_potion"){
 			var array_temp = array_create(0);
 			array_delete(inv, index, 1);
 
