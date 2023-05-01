@@ -14,3 +14,4 @@ if image_xscale == -1 {
 alarm[0] = 1000
 
 obj_lvl1_manager.calmed_animal_count -= 1
+obj_lvl1_manager.in_barn -= 1

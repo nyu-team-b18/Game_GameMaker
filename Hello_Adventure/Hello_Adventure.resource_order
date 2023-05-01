@@ -11,6 +11,7 @@
     {"name":"Level 3 Objs","order":16,"path":"folders/Objects/Level 3 Objs.yy",},
     {"name":"Particle Systems","order":15,"path":"folders/Particle Systems.yy",},
     {"name":"Paths","order":4,"path":"folders/Paths.yy",},
+    {"name":"AHM","order":6,"path":"folders/Paths/AHM.yy",},
     {"name":"Rooms","order":10,"path":"folders/Rooms.yy",},
     {"name":"Scripts","order":5,"path":"folders/Scripts.yy",},
     {"name":"Sequences","order":11,"path":"folders/Sequences.yy",},
@@ -54,7 +55,6 @@
     {"name":"Dungeon","order":14,"path":"folders/Tile Sets/Dungeon.yy",},
     {"name":"Farm","order":12,"path":"folders/Tile Sets/Farm.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"AHM","order":6,"path":"folders/Paths/AHM.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"obj_UI","order":8,"path":"objects/obj_UI/obj_UI.yy",},
