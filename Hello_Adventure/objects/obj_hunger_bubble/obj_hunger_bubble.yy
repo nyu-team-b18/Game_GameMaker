@@ -25,10 +25,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_berry_bubble",
-    "path": "sprites/spr_berry_bubble/spr_berry_bubble.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

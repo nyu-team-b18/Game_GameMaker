@@ -1,6 +1,11 @@
 event_inherited();
 
-hungry = true
+bubble = 0
+food = choose(spr_berry_bubble, spr_wheat_bubble)
+
+show_hunger = false
+hungry = false
+alarm_is_set = false
 
 image_speed = 1
 spd = choose(1, -1);
