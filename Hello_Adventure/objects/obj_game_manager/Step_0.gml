@@ -1,17 +1,18 @@
 draw_set_font(silver_font);
 
 #region INVENTORY VISIBILITY
-if global.l1state == "pregame" or global.l1state == "path" or global.l1state == "d1" or global.l1state == "story" {
-	global.inventory_id.visible = false
-} else {
-	global.inventory_id.visible = true
-}
+//if global.l1state == "pregame" or global.l1state == "path" or global.l1state == "d1" or global.l1state == "story" {
+//	global.inventory_id.visible = false
+//} else {
+//	global.inventory_id.visible = true
+//}
 #endregion
 
 #region ROOM CONTROL
 // START TO ROOM 1
 // USE THIS CODE TO SWITCH ROOMS FOR TESTING
 // comment out the if statement needed to start at the needed room
+
 //room 1
 if (room == rm_start and keyboard_check(vk_enter)) {
 	room_goto(rm_level_1)
@@ -153,9 +154,9 @@ if (room == rm_level_3_E and obj_player.x >= 700 and obj_player.x <= 780 and obj
 #endregion
 
 #region UNLOCK DOOR
-if (global.key_used){
+if (global.key_used == 2 and room == rm_level_3_C){
 	layer_set_visible(layer_get_id("Door_Closed"), false);
 	layer_set_visible(layer_get_id("Door_Open"), true);
+	instance_destroy(instance_find(obj_door_lock, 0));
 }
 #endregion
-

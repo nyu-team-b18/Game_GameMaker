@@ -1,3 +1,4 @@
+#region PLAYER
 if global.l1state == "pregame" and x == -30 and y == 110 {
 	state = PLAYER_STATE.not_in_control;
 	sprite_index = spr_player_walk;
@@ -25,7 +26,6 @@ if path_position == 1 {
 }
 
 if global.l1state == "l1w1" {state = PLAYER_STATE.in_control;}
-
 
 switch (state){
 	case PLAYER_STATE.not_in_control:
@@ -183,3 +183,22 @@ switch (state){
 	default: 
 		throw ("invalid state");
 }
+#endregion
+
+#region COMPANION
+if (x != xprevious or y != yprevious){
+	for (var i = array_size - 1; i > 0; i --){
+		pos_x[i] = pos_x[i-1];
+		pos_y[i] = pos_y[i-1];
+		
+		comp_sprite[i] = comp_sprite[i-1];
+		comp_Xscale[i] = comp_Xscale[i-1];
+	}
+	pos_x[0] = x;
+	pos_y[0] = y;
+	
+	comp_sprite[0] = sprite_index;
+	comp_Xscale[0] = image_xscale;
+}
+#endregion
+
