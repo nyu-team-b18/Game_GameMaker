@@ -23,7 +23,11 @@ if (   place_meeting(x+2, y+2, obj_animal_farm_collide)
 if place_meeting(x,y,obj_animal_spots) and !hungry {
 	spd = 0
 	if not safe {
-		obj_lvl1_manager.calmed_animal_count += 1
+		if full {
+			obj_lvl1_manager.calmed_animal_count += 1
+		} else {
+			obj_lvl1_manager.in_barn += 1
+		}
 		safe = true
 	}
 }
