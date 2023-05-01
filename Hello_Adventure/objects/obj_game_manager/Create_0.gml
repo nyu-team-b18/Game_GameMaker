@@ -12,7 +12,7 @@ global.inventory_id = instance_create_layer(x, y, "GUI", obj_inventory);
 
 global.l1state = "pregame"
 global.kills = irandom(20);
-global.kills = 0;
+//global.kills = 0;
 global.curr_kills = -1;
 global.must_place = true;
 global.key_used = 0; 
