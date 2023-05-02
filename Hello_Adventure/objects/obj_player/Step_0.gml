@@ -202,3 +202,6 @@ if (x != xprevious or y != yprevious){
 }
 #endregion
 
+#region DROPPING
+spot_inst = instance_place(x, y, obj_animal_spots)
+#endregion

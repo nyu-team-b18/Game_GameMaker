@@ -38,7 +38,7 @@
     {"name":"Cactus","order":3,"path":"folders/Sprites/Cactus.yy",},
     {"name":"Adults","order":1,"path":"folders/Sprites/Cactus/Adults.yy",},
     {"name":"Babies","order":2,"path":"folders/Sprites/Cactus/Babies.yy",},
-    {"name":"DIalogue","order":1,"path":"folders/Sprites/DIalogue.yy",},
+    {"name":"Dialogue","order":1,"path":"folders/Sprites/Dialogue.yy",},
     {"name":"Enemies","order":4,"path":"folders/Sprites/Enemies.yy",},
     {"name":"Fire Elemental","order":2,"path":"folders/Sprites/Enemies/Fire Elemental.yy",},
     {"name":"Wolf Cub","order":1,"path":"folders/Sprites/Enemies/Wolf Cub.yy",},

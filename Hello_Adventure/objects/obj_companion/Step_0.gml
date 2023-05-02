@@ -1,4 +1,3 @@
-
 if (obj_player.sprite_index == spr_player_idle){
 	sprite_index = baby_strawberry_cow_idle;
 		

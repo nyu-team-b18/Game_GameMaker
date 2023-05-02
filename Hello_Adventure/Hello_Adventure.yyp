@@ -50,7 +50,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Cactus","folderPath":"folders/Sprites/Cactus.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Adults","folderPath":"folders/Sprites/Cactus/Adults.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Babies","folderPath":"folders/Sprites/Cactus/Babies.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"DIalogue","folderPath":"folders/Sprites/DIalogue.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Dialogue","folderPath":"folders/Sprites/Dialogue.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Enemies","folderPath":"folders/Sprites/Enemies.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Fire Elemental","folderPath":"folders/Sprites/Enemies/Fire Elemental.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Wolf Cub","folderPath":"folders/Sprites/Enemies/Wolf Cub.yy",},

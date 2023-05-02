@@ -12,7 +12,8 @@ l1_before_dialogue = [
 l1_dialogue = [
 	[dialogue_mother_hen],
 	["Oh dear...", "Mother Hen", dialogue_mother_hen],
-	["The rest of the barn seems to be a little more frazzeled than myself...", "Mother Hen", dialogue_mother_hen],
+	//["The rest of the barn seems to be a little more frazzeled than myself...", "Mother Hen", dialogue_mother_hen],
+	["The others are a bit more worried than I.", "Mother Hen", dialogue_mother_hen],
 	["Don't worry, I can calm them down.", "You", dialogue_player],
 	["", "", NaN]
 ]
