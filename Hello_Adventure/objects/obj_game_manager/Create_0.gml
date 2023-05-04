@@ -20,3 +20,5 @@ global.key_used = 0;
 global.has_chicks = false;
 
 global.level = LEVEL.START;
+
+global.companion = "pink";

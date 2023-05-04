@@ -1,3 +1,6 @@
+show_debug_message("LEVEL STATE")
+show_debug_message(global.l1state)
+
 
 if room == rm_level_1 {
 	all_full = -1
@@ -43,6 +46,7 @@ if room == rm_level_1 {
 			global.l1state = "l2w1"
 			obj_animal_spawner.curr_spawn_count = 3
 			obj_animal_spawner.spawn_count = 3
+			global.level = LEVEL.LEVEL2
 		
 		// 21 -> 22
 		} else if global.l1state == "l2w1" {
@@ -61,6 +65,9 @@ if room == rm_level_1 {
 			global.l1state = "l2w3"
 			obj_animal_spawner.curr_spawn_count = 8
 			obj_animal_spawner.spawn_count = 8
+		} else if global.l1state == "l2w3" {
+			with (obj_level_animals) { instance_destroy()}
+			global.l1state = "post-level"
 		}
 	}
 }
