@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "InventoryFunctions",
+  "name": "SaveGame",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Inventory",
-    "path": "folders/Scripts/Inventory.yy",
+    "name": "Other",
+    "path": "folders/Scripts/Other.yy",
   },
 }
