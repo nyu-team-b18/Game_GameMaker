@@ -3,7 +3,6 @@ function InventoryDrop(inv, index){
 	if (array_length(global.inventory_id.inventory) > 0 and 
 	index < array_length(global.inventory_id.inventory) and
 	canUse(array_length(inv), index)){
-		show_debug_message(string(array_length(inv)) +  " - " + string(selected_index))
 		DepleteStamina(array_length(inv), selected_index);
 		
 		objname = inv[index].obj;
