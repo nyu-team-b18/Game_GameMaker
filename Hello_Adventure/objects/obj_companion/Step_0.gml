@@ -10,6 +10,9 @@ if global.companion == "pink" {
 	}
 } else if global.companion == "black" {
 	dialogue_spr = dialogue_black_companion
+	show_debug_message(dialogue_spr)
+	show_debug_message(dialogue_black_companion)
+	show_debug_message(dialogue_pink_companion)
 	if (obj_player.sprite_index == spr_player_idle){
 		sprite_index = baby_black_cow_idle;
 		

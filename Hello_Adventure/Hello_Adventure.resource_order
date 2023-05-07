@@ -151,7 +151,6 @@
     {"name":"LoadGame","order":1,"path":"scripts/LoadGame/LoadGame.yy",},
     {"name":"baby_brown_cow_idle","order":2,"path":"sprites/baby_brown_cow_idle/baby_brown_cow_idle.yy",},
     {"name":"obj_baby_chick","order":6,"path":"objects/obj_baby_chick/obj_baby_chick.yy",},
-    {"name":"portrait_only_cow_kigurumi","order":5,"path":"sprites/portrait_only_cow_kigurumi/portrait_only_cow_kigurumi.yy",},
     {"name":"wolf_idle","order":4,"path":"sprites/wolf_idle/wolf_idle.yy",},
     {"name":"spring_and_summer_objects","order":6,"path":"sprites/spring_and_summer_objects/spring_and_summer_objects.yy",},
     {"name":"baby_chicken_walk","order":1,"path":"sprites/baby_chicken_walk/baby_chicken_walk.yy",},
