@@ -71,9 +71,7 @@ function InventoryUse(inv, index){
 		} 
 		// FOOD
 		else if (inv[index].obj == "obj_berry" or inv[index].obj == "obj_wheat") {
-			show_debug_message("HELP")
-			
-			var animal = instance_position(obj_player.x, obj_player.y-5, obj_level_animals)
+			var animal = instance_position(obj_player.x, obj_player.y, obj_level_animals)
 
 			if animal != noone {
 				if ((inv[index].obj == "obj_berry" and animal.food = spr_berry_bubble) or
@@ -81,9 +79,10 @@ function InventoryUse(inv, index){
 					!animal.full {
 					DepleteStamina(array_length(inv), index);
 
-					animal.hungry = false
+					//animal.hungry = false
 					animal.full = true
 					if animal.bubble != 0 { instance_destroy(animal.bubble) }
+					show_debug_message(animal.id)
 					show_debug_message(animal.full)
 
 						

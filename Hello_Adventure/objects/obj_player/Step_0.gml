@@ -1,5 +1,6 @@
 #region PLAYER
 if obj_dialogue.visible == true {
+	sprite_index = spr_player_idle
 	state = PLAYER_STATE.not_in_control
 } 
 

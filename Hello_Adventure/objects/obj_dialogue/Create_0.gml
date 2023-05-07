@@ -19,6 +19,22 @@ l1_dialogue = [
 	["", "", NaN]
 ]
 
+l2_start_dialogue = [
+    [0],
+	[dialogue_mother_hen],
+	["Almost done!", "Mother Hen", dialogue_mother_hen],
+	["To make this a little easier,", "Mother Hen", dialogue_mother_hen],
+	["let me tell you a little secret.", "Mother Hen", dialogue_mother_hen],
+	["By using the numbers 1-9 on your keyboard...", "Mother Hen", dialogue_mother_hen],
+	["...you can access all of your inventory.", "Mother Hen", dialogue_mother_hen],
+	["Be mindful of your stamina, though.", "Mother Hen", dialogue_mother_hen],
+	["Once you run through that,", "Mother Hen", dialogue_mother_hen],
+	["you're back to removing from the end of the list.", "Mother Hen", dialogue_mother_hen],
+	["Your stamina is shown as 5 stars at the top.", "Mother Hen", dialogue_mother_hen],
+	["Good luck!", "Mother Hen", dialogue_mother_hen],
+	["", "", NaN]
+]
+
 l2_end_dialogue = [
     [0],
 	[dialogue_mother_hen],
