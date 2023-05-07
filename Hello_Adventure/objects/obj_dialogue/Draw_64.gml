@@ -5,6 +5,8 @@ if global.l1state == "story" {
 	curr_array = l1_before_dialogue
 } else if global.l1state == "d1" {
 	curr_array = l1_dialogue
+} else if global.l1state == "pre-l2" {
+	curr_array = l2_start_dialogue
 } else if global.l1state == "post-level" {
 	curr_array = l2_end_dialogue
 } 
@@ -46,6 +48,9 @@ if d_index == array_length(curr_array) - 1 {
 		global.l1state = "path"	
 	} else if global.l1state == "d1" {
 		global.l1state = "l1w1"	
+	} else if global.l1state == "pre-l2" {
+		global.l1state = "l2w1"	
+		obj_player.state = PLAYER_STATE.in_control
 	} else if global.l1state == "post-level" {
 		global.l1state = "Companion Selection"
 	} 

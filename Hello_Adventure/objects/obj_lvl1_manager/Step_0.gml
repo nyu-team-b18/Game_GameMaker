@@ -39,7 +39,7 @@ if room == rm_level_1 {
 			with (obj_level_animals) { instance_destroy()}
 			calmed_animal_count = 0
 			in_barn = 0
-			global.l1state = "l2w1"
+			global.l1state = "pre-l2"
 			obj_animal_spawner.curr_spawn_count = 3
 			obj_animal_spawner.spawn_count = 3
 			global.level = LEVEL.LEVEL2
@@ -59,8 +59,8 @@ if room == rm_level_1 {
 			calmed_animal_count = 0
 			in_barn = 0
 			global.l1state = "l2w3"
-			obj_animal_spawner.curr_spawn_count = 8
-			obj_animal_spawner.spawn_count = 8
+			obj_animal_spawner.curr_spawn_count = 7
+			obj_animal_spawner.spawn_count = 7
 		} else if global.l1state == "l2w3" {
 			with (obj_level_animals) { instance_destroy()}
 			global.l1state = "post-level"

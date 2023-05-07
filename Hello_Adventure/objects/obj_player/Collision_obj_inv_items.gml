@@ -27,13 +27,21 @@ if (keyboard_check_pressed(ord("A"))){
 		}
 
 		else if object_get_parent(asset_get_index(other.item.obj)) == obj_level_animals {
-			if !place_meeting(asset_get_index(other.item.obj).x, asset_get_index(other.item.obj).y,  obj_animal_spots) {
+			if !place_meeting(other.x, other.y,  obj_animal_spots) {
 				if other.bubble != 0 { instance_destroy(other.bubble) }
-				if !other.full {
+				if other.hungry or !other.full or (other.full and !place_meeting(asset_get_index(other.item.obj).x, asset_get_index(other.item.obj).y,  obj_animal_spots)){
 					array_push(global.inventory_id.inventory, other.item)
 					instance_destroy(other);
+				} else {show_debug_message("i cant pickup bc ur full")}
+			} else {
+				show_debug_message("i cant pickup bc in the barn")
+				show_debug_message("PLAYER X AND Y")
+				show_debug_message(x)
+				show_debug_message(y)
+				show_debug_message("CHICKEN X AND Y")
+				show_debug_message(asset_get_index(other.item.obj).x)
+				show_debug_message(asset_get_index(other.item.obj).y)
 				}
-			}
 		} else {
 			array_push(global.inventory_id.inventory, other.item)
 			instance_destroy(other);
