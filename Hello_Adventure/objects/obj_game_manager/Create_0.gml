@@ -1,8 +1,10 @@
-/// @Game Manager
+/// @desc Game Manager
+randomize();
+room_goto(ROOM_START);
 
-#macro INVENTORY_SLOTS 10
-
+#region GlOBAL VARIABLES
 global.gameSaveSlot =0;
+global.targetRoom = -1;
 global.targetX = -1;
 global.targetY = -1;
 
@@ -22,3 +24,4 @@ global.key_used = 0;
 global.has_chicks = false;
 
 global.level = LEVEL.START;
+#endregion
