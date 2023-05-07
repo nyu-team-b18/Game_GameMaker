@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "InventoryFunctions",
+  "name": "hurt",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Inventory",
-    "path": "folders/Scripts/Inventory.yy",
+    "name": "Player States",
+    "path": "folders/Scripts/Player States.yy",
   },
 }
