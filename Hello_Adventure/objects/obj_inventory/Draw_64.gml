@@ -88,6 +88,10 @@ if (room != rm_start) {
 		}
 	} 
 	
+	if global.level == LEVEL.LEVEL1 {
+		index_value = array_length(inventory) - 1
+	}
+	
 	// slot position
 	var xx = ((INVENTORY_SLOTS * 29) / 2) + (index_value mod row_length) * 28 + 19
 	var yy = 260 + (index_value div row_length) * 30 + 17

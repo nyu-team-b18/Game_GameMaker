@@ -3,6 +3,7 @@ event_inherited();
 bubble = 0
 food = choose(spr_berry_bubble, spr_wheat_bubble)
 
+
 show_hunger = false
 hungry = false
 full = false

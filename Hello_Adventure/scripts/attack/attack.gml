@@ -1,5 +1,8 @@
 function attack(){
-	sprite_index = spr_player_attack_3;
+	if sprite_index!=spr_player_attack_3 {
+	   image_index = 0;
+	   sprite_index = spr_player_attack_3;
+	}
 	image_speed = 3;
 	#region MOVEMENT
 	// horizontal movement

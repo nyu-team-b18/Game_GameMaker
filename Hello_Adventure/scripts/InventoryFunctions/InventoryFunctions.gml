@@ -24,22 +24,29 @@ function InventoryDrop(inv, index){
 	}
 }
 
-
 // use item (del from inv and dont return to world)
 function InventoryUse(inv, index){
 	if (array_length(global.inventory_id.inventory) > 0 and 
 	index < array_length(global.inventory_id.inventory) and
 	canUse(array_length(inv), index)){
 		// KEY
-		if (inv[index].obj == "obj_key" and 
+		if (inv[index].obj == "obj_key" and
 		position_meeting(obj_player.x, obj_player.y, instance_find(obj_can_unlock, 0))){
-			DepleteStamina(array_length(inv), index);
+			if obj_player.has_2_keys {
+				DepleteStamina(array_length(inv), index);
 
-			global.key_used += 1;
-			array_delete(inv, index, 1);
+				global.key_used += 1;
+				array_delete(inv, index, 1);
 			
-			if index_value == array_length(inventory){
-				index_value = array_length(inventory) - 1
+				if index_value == array_length(inventory){
+					index_value = array_length(inventory) - 1
+				}
+			} else {
+				// trigger dialogue
+				if obj_companion.try_to_open_door[0][0] == 0 {
+					obj_dialogue.curr_array = obj_companion.try_to_open_door
+					obj_companion.thinking = true
+				}
 			}
 		}
 		
@@ -64,9 +71,7 @@ function InventoryUse(inv, index){
 		} 
 		// FOOD
 		else if (inv[index].obj == "obj_berry" or inv[index].obj == "obj_wheat") {
-			show_debug_message("HELP")
-			
-			var animal = instance_position(obj_player.x, obj_player.y-5, obj_level_animals)
+			var animal = instance_position(obj_player.x, obj_player.y, obj_level_animals)
 
 			if animal != noone {
 				if ((inv[index].obj == "obj_berry" and animal.food = spr_berry_bubble) or
@@ -74,9 +79,10 @@ function InventoryUse(inv, index){
 					!animal.full {
 					DepleteStamina(array_length(inv), index);
 
-					animal.hungry = false
+					//animal.hungry = false
 					animal.full = true
 					if animal.bubble != 0 { instance_destroy(animal.bubble) }
+					show_debug_message(animal.id)
 					show_debug_message(animal.full)
 
 						

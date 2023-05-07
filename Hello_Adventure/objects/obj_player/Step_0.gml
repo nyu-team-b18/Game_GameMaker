@@ -1,6 +1,15 @@
 #region PLAYER
 if obj_dialogue.visible == true {
+	sprite_index = spr_player_idle
 	state = PLAYER_STATE.not_in_control
+} 
+
+if obj_companion.visible == true and obj_companion.dialogue == false {
+	state = PLAYER_STATE.in_control
+}
+
+if (keyboard_check(vk_space)){
+	state = PLAYER_STATE.attack;
 }
 
 if global.l1state == "pregame" and x == -30 and y == 110 {
@@ -81,4 +90,19 @@ if (x != xprevious or y != yprevious){
 
 #region DROPPING
 spot_inst = instance_place(x, y, obj_animal_spots)
+#endregion
+
+#region CHECK KEYS
+var count = 0
+if not has_2_keys {
+	for (var i = 0; i < array_length(global.inventory_id.inventory); i++) {
+		if global.inventory_id.inventory[i] == global.items[ITEM.KEY] {
+			count += 1
+		}
+	}
+}
+
+if count == 2 {
+	has_2_keys = true
+}
 #endregion

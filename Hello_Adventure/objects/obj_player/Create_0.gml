@@ -1,4 +1,5 @@
 #region PLAYER
+has_2_keys = false
 move_speed = 2;
 
 dx = 0;

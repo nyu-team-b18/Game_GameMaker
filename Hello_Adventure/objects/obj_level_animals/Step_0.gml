@@ -1,8 +1,11 @@
 event_inherited();
 
+if global.l1state == "l1w1" {
+	full = true
+}
 
 if !alarm_is_set and safe and obj_lvl1_manager.in_barn == obj_animal_spawner.curr_spawn_count {
-	alarm[1] = 500
+	alarm[1] = 750
 	alarm_is_set = true
 	show_hunger = true
 }
@@ -26,9 +29,11 @@ if place_meeting(x,y,obj_animal_spots) and !hungry {
 	if not safe {
 		if full {
 			obj_lvl1_manager.calmed_animal_count += 1
-		} else {
+		}
+		if !full or global.l1state == "l1w1" {
 			obj_lvl1_manager.in_barn += 1
 		}
+		
 		safe = true
 	}
 }
