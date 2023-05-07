@@ -1,6 +1,7 @@
-d_index = 1
+d_index = 2
 
 l1_before_dialogue = [
+    [0],
 	[dialogue_mother_hen],
 	["HELPPPPP!!", "Mother Hen", dialogue_mother_hen],
 	["What's wrong?", "You", dialogue_player],
@@ -10,6 +11,7 @@ l1_before_dialogue = [
 ]
 
 l1_dialogue = [
+    [0],
 	[dialogue_mother_hen],
 	["Oh dear...", "Mother Hen", dialogue_mother_hen],
 	["The others are a bit more worried than I.", "Mother Hen", dialogue_mother_hen],
@@ -18,6 +20,7 @@ l1_dialogue = [
 ]
 
 l2_end_dialogue = [
+    [0],
 	[dialogue_mother_hen],
 	["Thank you.", "Mother Hen", dialogue_mother_hen],
 	["Of course. This barn means a lot to me.", "You", dialogue_player],
