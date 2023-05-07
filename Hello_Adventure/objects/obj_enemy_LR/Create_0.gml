@@ -6,4 +6,4 @@ xspd = 0;
 hmove = 1;
 
 alarm[0] = 120;
-state = ENEMY_STATE.left_right;
+eneType = ENEMY_TYPE.left_right;

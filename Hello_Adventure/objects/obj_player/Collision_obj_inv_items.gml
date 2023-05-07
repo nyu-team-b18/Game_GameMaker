@@ -15,6 +15,9 @@ if (keyboard_check_pressed(ord("A"))){
 				}
 			}
 		} else {
+			if (other.item == global.items[ITEM.COPY_POTION]){
+				global.has_potion = true;
+			}
 			array_push(global.inventory_id.inventory, other.item)
 			instance_destroy(other);
 		}

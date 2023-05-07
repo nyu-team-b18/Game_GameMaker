@@ -1,6 +1,7 @@
 /// @Draw Health, Stamina
 
 // Display health and stamina when player is not in level 1 or in the start room
+
 #region HEALTH
 var _playerHealth = global.playerHealth; // total number of hearts to draw
 var _playerHealthMax = global.playerHealthMax;
