@@ -43,11 +43,35 @@ if global.level == LEVEL.LEVEL3 and room == rm_level_3_A{
 	}
 }
 
-if global.level == LEVEL.LEVEL3 and room == rm_level_3_B{
+if global.level == LEVEL.LEVEL3 and room == rm_level_3_B {
 	if b3[0][0] == 0 {
 		obj_dialogue.curr_array = b3
 		thinking = true
 	    b3[0][0] = 1
+	}
+}
+
+if global.level == LEVEL.LEVEL3 and room == rm_level_3_C {
+	if c3[0][0] == 0 {
+		obj_dialogue.curr_array = c3
+		thinking = true
+	    c3[0][0] = 1
+	}
+}
+
+if global.level == LEVEL.ENEMY_LAIR and room == rm_level_3_D {
+	if enemy_lair[0][0] == 0 {
+		obj_dialogue.curr_array = enemy_lair
+		thinking = true
+	    enemy_lair[0][0] = 1
+	}
+}
+
+if global.level == LEVEL.END and room == rm_level_3_E {
+	if get_home[0][0] == 0 {
+		obj_dialogue.curr_array = get_home
+		thinking = true
+	    get_home[0][0] = 1
 	}
 }
 

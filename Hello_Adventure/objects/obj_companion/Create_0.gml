@@ -11,24 +11,6 @@ dialogue = false
 
 #region DIALOGUE
 
-#region ROOM 1
-#endregion
-#region ROOM 3A
-#endregion
-#region ROOM 3B
-#endregion
-#region ROOM 3C
-#endregion
-#region ROOM 3D
-#endregion
-#region ROOM 3E
-#endregion
-#region ENEMY LAIR
-#endregion
-#region HOME
-#endregion
-
-
 a3 = [
     [0],
 	[dialogue_companion],
@@ -88,6 +70,14 @@ enemy_lair = [
 	["The chicks!!", "Companion", dialogue_companion],
 	["Pick them all up and get out of here...", "Companion", dialogue_companion],
 	["... before the enemy wakes up.", "Companion", dialogue_companion],
+	["", "", NaN]
+]
+
+get_home = [
+    [0],
+	[dialogue_companion],
+	["We made it!", "Companion", dialogue_companion],
+	["Let's drop the chicks back to where they belong", "Companion", dialogue_companion],
 	["", "", NaN]
 ]
 #endregion

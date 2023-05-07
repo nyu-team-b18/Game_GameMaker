@@ -71,9 +71,24 @@ if (room == rm_start and keyboard_check(vk_enter)) {
 //	obj_player.y = 445
 //}
 
+// GLOBAL CHECKS
+if room == rm_level_1 { 
+	global.level = LEVEL.LEVEL1
+}
+if room == rm_level_1 and (global.l1state == "l2w1" or global.l1state == "l2w2" or global.l1state == "l2w3") { 
+	global.level = LEVEL.LEVEL2
+} else if room == rm_level_3_A or room == rm_level_3_B or room == rm_level_3_C {
+	global.level = LEVEL.LEVEL3
+} else if room == rm_level_3_D {
+	global.level = LEVEL.ENEMY_LAIR
+} else if room == rm_level_3_E {
+	global.level = LEVEL.END
+}
+
 // ROOM 1 TO 3A SWITCH
 if (room == rm_level_1 and global.l1state == "DONE" and obj_player.x >= 700 and obj_player.x <= 780 and obj_player.y >= 475) {
 	room_goto(rm_level_3_A)
+	
 	obj_player.x = 800
 	obj_player.y = 32
 }

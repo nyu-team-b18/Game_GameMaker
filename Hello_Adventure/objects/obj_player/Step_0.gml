@@ -90,3 +90,18 @@ if (x != xprevious or y != yprevious){
 #region DROPPING
 spot_inst = instance_place(x, y, obj_animal_spots)
 #endregion
+
+#region CHECK KEYS
+var count = 0
+if not has_2_keys {
+	for (var i = 0; i < array_length(global.inventory_id.inventory); i++) {
+		if global.inventory_id.inventory[i] == global.items[ITEM.KEY] {
+			count += 1
+		}
+	}
+}
+
+if count == 2 {
+	has_2_keys = true
+}
+#endregion
