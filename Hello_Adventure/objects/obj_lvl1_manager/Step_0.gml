@@ -1,7 +1,3 @@
-show_debug_message("LEVEL STATE")
-show_debug_message(global.l1state)
-
-
 if room == rm_level_1 {
 	all_full = -1
 	full_array = []

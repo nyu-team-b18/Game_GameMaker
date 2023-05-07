@@ -1,7 +1,7 @@
 #region PLAYER
 if obj_dialogue.visible == true {
 	state = PLAYER_STATE.not_in_control
-}
+} 
 
 if global.l1state == "pregame" and x == -30 and y == 110 {
 	sprite_index = spr_player_walk;

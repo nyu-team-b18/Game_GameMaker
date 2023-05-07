@@ -72,14 +72,14 @@ if (room == rm_start and keyboard_check(vk_enter)) {
 //}
 
 // ROOM 1 TO 3A SWITCH
-if (room == rm_level_1 and global.l1state = "DONE" and obj_player.x >= 700 and obj_player.x <= 780 and obj_player.y >= 475) {
+if (room == rm_level_1 and global.l1state == "DONE" and obj_player.x >= 700 and obj_player.x <= 780 and obj_player.y >= 475) {
 	room_goto(rm_level_3_A)
 	obj_player.x = 800
 	obj_player.y = 32
 }
 
 // ROOM 3A TO 1 SWITCH
-if (room == rm_level_3_A and obj_player.x >= 760 and obj_player.x <= 840 and obj_player.y <= -10) {
+if (room == rm_level_3_A and global.l1state != "DONE" and  obj_player.x >= 760 and obj_player.x <= 840 and obj_player.y <= -10) {
 	room_goto(rm_level_1)
 	obj_player.x = 736
 	obj_player.y = 440

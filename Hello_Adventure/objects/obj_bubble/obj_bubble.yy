@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_hunger_bubble",
+  "name": "obj_bubble",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
@@ -10,7 +10,7 @@
     "path": "folders/Objects/Level 1 Objs.yy",
   },
   "parentObjectId": null,
-  "persistent": false,
+  "persistent": true,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
   "physicsFriction": 0.2,
