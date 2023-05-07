@@ -92,7 +92,9 @@ function InventoryUse(inv, index){
 }
 
 function DepleteStamina(total, amt){
-	global.playerStamina -= (total - amt - 1) / 2;
+	if (global.level != LEVEL.LEVEL1){
+		global.playerStamina -= (total - amt - 1) / 2;
+	}
 }
 
 function canUse(total, amt){

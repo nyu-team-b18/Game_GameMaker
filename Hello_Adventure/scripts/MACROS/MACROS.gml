@@ -1,5 +1,4 @@
-#macro FRAME_RATE 60
+// MACRO VALUES
+
 #macro INVENTORY_SLOTS 10
-#macro ROOM_START rm_level_3_B
-
-
+#macro ROOM_START rm_start

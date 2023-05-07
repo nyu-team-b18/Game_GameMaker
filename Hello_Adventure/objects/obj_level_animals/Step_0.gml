@@ -2,7 +2,7 @@ event_inherited();
 
 
 if !alarm_is_set and safe and obj_lvl1_manager.in_barn == obj_animal_spawner.curr_spawn_count {
-	alarm[1] = 50000
+	alarm[1] = 500
 	alarm_is_set = true
 	show_hunger = true
 }
