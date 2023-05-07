@@ -1,22 +1,35 @@
 function LoadGame(_slot){
-/*
 	global.gameSaveSlot =_slot;
 	var _file = "save" + string(global.gameSaveSlot) + ".sav";
+	
 	if(file_exists(_file)){
 		// Load the game data
 		var _json = LoadJSONFile(_file);
 		
-		// Global Variables
+		// PLAYER
+		obj_player.x = _json[? "playerX"];
+		obj_player.y = _json[? "playerY"];
+	
 		global.playerHealth = _json[? "playerHealth"];
 		global.playerHealthMax= _json[? "playerHealth"];
 		global.playerStamina = _json[? "playerStamina"];
-		global.playerStaminaMax = _json[? "playrStaminaMax"];
+		global.playerStaminaMax = _json[? "playerStaminaMax"];
+		
+		// OTHER
+		global.l1state = _json[? "l1state"];
 		global.kills = _json[? "kills"];
 		global.curr_kills = _json[? "curr_kills"];
 		global.key_used = _json[? "key_used"];
+		global.must_place = _json[? "must_place"];
 		global.has_chicks = _json[? "has_chicks"];
-		global.inventory_id = _json[? "inv_id"];
+		global.has_potion = _json[? "has_potion"];
+		global.level = _json[? "level"];
 		
+		// GUI
+		global.iUI = _json[? "iUI"];
+		
+		// INVENTORY
+		global.inventory_id = _json[? "inv_id"];
 		var inv = _json[? "inventory"];
 		global.inventory_id.inventory = []
 		for (var i = 0; i < array_length(inv); i++){
@@ -32,10 +45,10 @@ function LoadGame(_slot){
 			else if(inv[i] == "obj_berry"){ array_push(global.inventory_id.inventory, global.items[ITEM.BERRY]); }
 		}
 		
-		// Room
-		room = _json[? "playerHealth"];
-		ds_map_destroy(_json);
+		// ROOM
+		room_goto(_json[? "room"]);
 		
+		ds_map_destroy(_json);
 		return true;
 	} else {
 		show_debug_message("no save in this slot");
@@ -50,5 +63,5 @@ function LoadJSONFile(_filename){
 	
 	var _json = json_decode(_string); // contains DS map
 	return _json;
-	*/
+	
 }

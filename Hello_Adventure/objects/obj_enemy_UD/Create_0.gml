@@ -6,4 +6,4 @@ yspd = 0;
 vmove = 1;
 
 alarm[0] = 120;
-state = ENEMY_STATE.up_down;
+eneType = ENEMY_TYPE.up_down;

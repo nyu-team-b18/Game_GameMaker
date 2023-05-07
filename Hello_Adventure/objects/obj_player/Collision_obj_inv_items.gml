@@ -43,6 +43,9 @@ if (keyboard_check_pressed(ord("A"))){
 				show_debug_message(asset_get_index(other.item.obj).y)
 				}
 		} else {
+			if (other.item == global.items[ITEM.COPY_POTION]){
+				global.has_potion = true;
+			}
 			array_push(global.inventory_id.inventory, other.item)
 			instance_destroy(other);
 		}
