@@ -1,19 +1,15 @@
 // Player in hurt state
 function hurt(){
-	if (global.playerHealth <= 0){
-		PlayerDeath();
-		LoadGame(global.gameSaveSlot);
-	} else {
-		sprite_index = spr_player_walk
+	sprite_index = spr_player_walk
 		
-		if (abs(dx) > 0){
-			x += (dx / 2);
-			dx /= 2;
-		} else if (abs(dy) > 0){
-			y += (dy / 2);
-			dy /= 2;
-		} else {
-			state = PLAYER_STATE.in_control;
-		}
+	if (abs(dx) > 0){
+		x += (dx / 2);
+		dx /= 2;
+	} else if (abs(dy) > 0){
+		y += (dy / 2);
+		dy /= 2;
+	} else {
+		state = PLAYER_STATE.in_control;
 	}
+
 }

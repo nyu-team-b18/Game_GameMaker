@@ -31,7 +31,6 @@ function PlayerDeath(){
 	_map[? "iUI"] = global.iUI;
 	
 	// INVENTORY
-	_map[? "inv_id"] = global.inventory_id;
 	_map[? "inventory"] = [];
 	
 	// save all of this data into a string
