@@ -1,6 +1,6 @@
 /// @desc Game Manager
 randomize();
-room_goto(ROOM_START);
+room_goto(rm_start);
 
 #region GlOBAL VARIABLES
 global.gameSaveSlot = 0;

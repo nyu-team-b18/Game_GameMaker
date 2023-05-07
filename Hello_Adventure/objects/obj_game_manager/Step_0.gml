@@ -9,7 +9,7 @@ if global.l1state == "pregame" or global.l1state == "path" or obj_dialogue.visib
 #endregion
 
 #region COMPANION VISIBILITY
-if global.level == LEVEL.START or global.level == LEVEL.LEVEL1 or global.level == LEVEL.LEVEL2 {
+if room == rm_start or global.level == LEVEL.LEVEL1 or global.level == LEVEL.LEVEL2 {
 	if global.l1state == "DONE" {
 		obj_companion.visible = true 
 	} else {
