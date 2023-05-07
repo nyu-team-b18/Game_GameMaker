@@ -35,9 +35,20 @@ y = obj_player.pos_y[record];
 #region DIALOGUE
 
 // test dialogue switch
-if global.level == "l1w1" {
-	obj_dialogue.curr_array = test_dialogue_1
-	thinking = true
+if global.level == LEVEL.LEVEL3 and room == rm_level_3_A{
+	if a3[0][0] == 0 {
+		obj_dialogue.curr_array = a3
+		thinking = true
+	    a3[0][0] = 1
+	}
+}
+
+if global.level == LEVEL.LEVEL3 and room == rm_level_3_B{
+	if b3[0][0] == 0 {
+		obj_dialogue.curr_array = b3
+		thinking = true
+	    b3[0][0] = 1
+	}
 }
 
 if keyboard_check_pressed(vk_enter) and thinking and visible == true {

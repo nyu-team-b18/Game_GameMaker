@@ -1,7 +1,5 @@
 draw_self()
 
-show_debug_message(dialogue)
-
 if thinking and visible == true {
 	if think_bubble.visible == true {
 		spr_img_ind = think_bubble.image_index

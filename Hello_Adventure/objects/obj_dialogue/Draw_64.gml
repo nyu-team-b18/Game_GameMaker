@@ -10,7 +10,7 @@ if global.l1state == "story" {
 } 
 
 player_spr = dialogue_player
-other_spr = curr_array[0][0]
+other_spr = curr_array[1][0]
 
 if curr_array[d_index][2] == player_spr {
 	draw_sprite(other_spr, 0, 550, 300)
@@ -36,7 +36,7 @@ draw_text(130,240,curr_array[d_index][0])
 
 
 if d_index == array_length(curr_array) - 1 {
-	d_index = 1
+	d_index = 2
 	
 	if obj_companion.dialogue == true {
 		obj_companion.dialogue = false 

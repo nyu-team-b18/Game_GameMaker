@@ -139,6 +139,7 @@
     {"name":"obj_enemy_LR","order":4,"path":"objects/obj_enemy_LR/obj_enemy_LR.yy",},
     {"name":"farm_inside","order":4,"path":"sprites/farm_inside/farm_inside.yy",},
     {"name":"black_chicken","order":14,"path":"sprites/black_chicken/black_chicken.yy",},
+    {"name":"dialogue_companion","order":2,"path":"sprites/dialogue_companion/dialogue_companion.yy",},
     {"name":"obj_companion","order":9,"path":"objects/obj_companion/obj_companion.yy",},
     {"name":"Farm_Bridges","order":3,"path":"tilesets/Farm_Bridges/Farm_Bridges.yy",},
     {"name":"baby_brown_cow_walk","order":3,"path":"sprites/baby_brown_cow_walk/baby_brown_cow_walk.yy",},

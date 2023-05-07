@@ -172,6 +172,7 @@
     {"id":{"name":"obj_enemy_LR","path":"objects/obj_enemy_LR/obj_enemy_LR.yy",},},
     {"id":{"name":"farm_inside","path":"sprites/farm_inside/farm_inside.yy",},},
     {"id":{"name":"black_chicken","path":"sprites/black_chicken/black_chicken.yy",},},
+    {"id":{"name":"dialogue_companion","path":"sprites/dialogue_companion/dialogue_companion.yy",},},
     {"id":{"name":"obj_companion","path":"objects/obj_companion/obj_companion.yy",},},
     {"id":{"name":"Farm_Bridges","path":"tilesets/Farm_Bridges/Farm_Bridges.yy",},},
     {"id":{"name":"baby_brown_cow_walk","path":"sprites/baby_brown_cow_walk/baby_brown_cow_walk.yy",},},

@@ -3,6 +3,14 @@ if obj_dialogue.visible == true {
 	state = PLAYER_STATE.not_in_control
 } 
 
+if obj_companion.visible == true and obj_companion.dialogue == false {
+	state = PLAYER_STATE.in_control
+}
+
+if (keyboard_check(vk_space)){
+	state = PLAYER_STATE.attack;
+}
+
 if global.l1state == "pregame" and x == -30 and y == 110 {
 	sprite_index = spr_player_walk;
 	state = PLAYER_STATE.not_in_control;
