@@ -157,7 +157,7 @@ if global.level == LEVEL.END and room == rm_level_3_E {
 	}
 }
 
-if keyboard_check_pressed(vk_enter) and thinking and visible == true {
+if keyboard_check_pressed(vk_shift) and thinking and visible == true {
 	thinking = false
 	dialogue = true
 }
