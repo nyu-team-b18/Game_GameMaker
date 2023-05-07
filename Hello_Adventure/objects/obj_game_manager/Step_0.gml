@@ -1,11 +1,21 @@
 draw_set_font(silver_font);
 
 #region INVENTORY VISIBILITY
-//if global.l1state == "pregame" or global.l1state == "path" or global.l1state == "d1" or global.l1state == "story" {
-//	global.inventory_id.visible = false
-//} else {
-//	global.inventory_id.visible = true
-//}
+if global.l1state == "pregame" or global.l1state == "path" or obj_dialogue.visible == true {
+	global.inventory_id.visible = false
+} else {
+	global.inventory_id.visible = true
+}
+#endregion
+
+#region COMPANION VISIBILITY
+if global.level == LEVEL.START or global.level == LEVEL.LEVEL1 or global.level == LEVEL.LEVEL2 {
+	if global.l1state == "DONE" {
+		obj_companion.visible = true 
+	} else {
+		obj_companion.visible = false 
+	}
+}
 #endregion
 
 #region ROOM CONTROL

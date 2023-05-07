@@ -31,3 +31,7 @@ for (var i = array_size - 1; i >= 0; i-- ){
 var companion_1 = instance_create_layer(x, y, "Player", obj_companion);
 companion_1.record = 10;
 #endregion
+
+#region DROPPING
+spot_inst = false
+#endregion

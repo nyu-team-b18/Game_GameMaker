@@ -5,6 +5,8 @@ if global.l1state == "story" {
 	curr_array = l1_before_dialogue
 } else if global.l1state == "d1" {
 	curr_array = l1_dialogue
+} else if global.l1state == "post-level" {
+	curr_array = l2_end_dialogue
 } 
 
 player_spr = dialogue_player
@@ -22,7 +24,7 @@ if curr_array[d_index][2] == player_spr {
 }
 draw_self()
 
-if room == rm_level_1 and keyboard_check_pressed(vk_enter) and (global.l1state == "story" or global.l1state == "d1"){
+if room == rm_level_1 and keyboard_check_pressed(vk_enter) and (global.l1state == "story" or global.l1state == "d1" or global.l1state == "post-level"){
 	
 	if d_index < array_length(curr_array) - 1 {
 		d_index += 1
@@ -39,5 +41,7 @@ if d_index == array_length(curr_array) - 1 {
 		global.l1state = "path"	
 	} else if global.l1state == "d1" {
 		global.l1state = "l1w1"	
-	}
+	} else if global.l1state == "post-level" {
+		global.l1state = "Companion Selection"
+	} 
 }

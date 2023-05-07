@@ -61,6 +61,32 @@ function InventoryUse(inv, index){
 			if index_value == array_length(inventory){
 				index_value = array_length(inventory) - 1
 			}
+		} 
+		// FOOD
+		else if (inv[index].obj == "obj_berry" or inv[index].obj == "obj_wheat") {
+			show_debug_message("HELP")
+			
+			var animal = instance_position(obj_player.x, obj_player.y-5, obj_level_animals)
+
+			if animal != noone {
+				if ((inv[index].obj == "obj_berry" and animal.food = spr_berry_bubble) or
+				   (inv[index].obj == "obj_wheat" and animal.food = spr_wheat_bubble)) and
+					!animal.full {
+					DepleteStamina(array_length(inv), index);
+
+					animal.hungry = false
+					animal.full = true
+					if animal.bubble != 0 { instance_destroy(animal.bubble) }
+					show_debug_message(animal.full)
+
+						
+					array_delete(inv, index, 1);
+			
+					if index_value == array_length(inventory){
+						index_value = array_length(inventory) - 1
+					}
+				}
+			}
 		}
 	}	
 }

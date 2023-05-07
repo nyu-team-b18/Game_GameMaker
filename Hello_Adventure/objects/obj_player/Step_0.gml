@@ -1,13 +1,17 @@
 #region PLAYER
+if obj_dialogue.visible == true {
+	state = PLAYER_STATE.not_in_control
+}
+
 if global.l1state == "pregame" and x == -30 and y == 110 {
-	state = PLAYER_STATE.not_in_control;
 	sprite_index = spr_player_walk;
+	state = PLAYER_STATE.not_in_control;
 	image_xscale = 1
 	path_start(path, 1, path_action_stop, false)
 } if global.l1state == "path" and x == 172 and y == 110 {
 	path = player_follows_path
-	state = PLAYER_STATE.not_in_control;
 	sprite_index = spr_player_walk;
+	state = PLAYER_STATE.not_in_control;
 	image_xscale = 1
 	path_start(path, 1, path_action_stop, false)
 } 
@@ -73,4 +77,8 @@ if (x != xprevious or y != yprevious){
 	comp_sprite[0] = sprite_index;
 	comp_Xscale[0] = image_xscale;
 }
+#endregion
+
+#region DROPPING
+spot_inst = instance_place(x, y, obj_animal_spots)
 #endregion
