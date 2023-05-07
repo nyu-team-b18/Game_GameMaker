@@ -26,7 +26,6 @@ function SaveGame(_slot){
 	_map[? "iUI"] = global.iUI;
 	
 	// INVENTORY
-	_map[? "inv_id"] = global.inventory_id;
 	var inv = []
 	for (var i = 0; i < array_length(global.inventory_id.inventory); i++){
 		array_push(inv, global.inventory_id.inventory[i].obj)

@@ -160,6 +160,7 @@
     {"id":{"name":"black_cow","path":"sprites/black_cow/black_cow.yy",},},
     {"id":{"name":"front_blush","path":"sprites/front_blush/front_blush.yy",},},
     {"id":{"name":"spr_health","path":"sprites/spr_health/spr_health.yy",},},
+    {"id":{"name":"http_req","path":"scripts/http_req/http_req.yy",},},
     {"id":{"name":"sheep_idle","path":"sprites/sheep_idle/sheep_idle.yy",},},
     {"id":{"name":"fluffy_sheep","path":"sprites/fluffy_sheep/fluffy_sheep.yy",},},
     {"id":{"name":"strawberry_cow_idle","path":"sprites/strawberry_cow_idle/strawberry_cow_idle.yy",},},

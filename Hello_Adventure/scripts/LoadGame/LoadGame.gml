@@ -29,7 +29,6 @@ function LoadGame(_slot){
 		global.iUI = _json[? "iUI"];
 		
 		// INVENTORY
-		global.inventory_id = _json[? "inv_id"];
 		var inv = _json[? "inventory"];
 		global.inventory_id.inventory = []
 		for (var i = 0; i < array_length(inv); i++){
