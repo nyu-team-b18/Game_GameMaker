@@ -34,6 +34,7 @@ y = obj_player.pos_y[record];
 
 #region DIALOGUE
 
+// test dialogue switch
 if global.level == "l1w1" {
 	obj_dialogue.curr_array = test_dialogue_1
 	thinking = true
