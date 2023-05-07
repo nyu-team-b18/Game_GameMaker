@@ -5,7 +5,7 @@ if global.l1state == "l1w1" {
 }
 
 if !alarm_is_set and safe and obj_lvl1_manager.in_barn == obj_animal_spawner.curr_spawn_count {
-	alarm[1] = 750
+	alarm[1] = 1000
 	alarm_is_set = true
 	show_hunger = true
 }
