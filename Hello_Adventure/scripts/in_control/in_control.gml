@@ -12,64 +12,64 @@ function in_control(){
 	#region ENEMY COLLISIONS
 	if (!keyboard_check(vk_space) and 
 		(place_meeting(x + move_speed, y, obj_enemy) and instance_place(x + move_speed, y, obj_enemy).state != ENEMY_STATE.dead)) {
-		if (dx == 0) {
-			if (instance_place(x + move_speed, y, obj_enemy)){
-				global.playerHealth -= instance_place(x + move_speed, y, obj_enemy).damage;
-				dx = move_speed; // left of enemy
-			}
-		} else {
-			if (instance_place(x + dx, y, obj_enemy)){
-				global.playerHealth -= instance_place(x + dx, y, obj_enemy).damage;
-			}
-		}
+		//if (dx == 0) {
+		//	if (instance_place(x + move_speed, y, obj_enemy)){
+		//		global.playerHealth -= instance_place(x + move_speed, y, obj_enemy).damage;
+		//		dx = move_speed; // left of enemy
+		//	}
+		//} else {
+		//	if (instance_place(x + dx, y, obj_enemy)){
+		//		global.playerHealth -= instance_place(x + dx, y, obj_enemy).damage;
+		//	}
+		//}
 			
 		dx = -10* dx;
 		state = PLAYER_STATE.hurt;
 			
 	} else if (!keyboard_check(vk_space) and 
 				(place_meeting(x - move_speed, y, obj_enemy) and instance_place(x - move_speed, y, obj_enemy).state != ENEMY_STATE.dead)){
-		if (dx == 0) {
-			if (instance_place(x - move_speed, y, obj_enemy)){
-				global.playerHealth -= instance_place(x - move_speed, y, obj_enemy).damage;
-				dx = -move_speed; // left of enemy
-			}
-		} else {
-			if (instance_place(x + dx, y, obj_enemy)){
-				global.playerHealth -= instance_place(x + dx, y, obj_enemy).damage;
-			}
-		}
+		//if (dx == 0) {
+		//	if (instance_place(x - move_speed, y, obj_enemy)){
+		//		global.playerHealth -= instance_place(x - move_speed, y, obj_enemy).damage;
+		//		dx = -move_speed; // left of enemy
+		//	}
+		//} else {
+		//	if (instance_place(x + dx, y, obj_enemy)){
+		//		global.playerHealth -= instance_place(x + dx, y, obj_enemy).damage;
+		//	}
+		//}
 			
 		dx = -10 * dx;
 		state = PLAYER_STATE.hurt;
 			
 	} else if (!keyboard_check(vk_space) and 
 				(place_meeting(x, y + move_speed, obj_enemy) and instance_place(x, y + move_speed, obj_enemy).state != ENEMY_STATE.dead)){
-		if (dy == 0) {
-			if (instance_place(x, y + move_speed, obj_enemy)){
-				global.playerHealth -= instance_place(x, y + move_speed, obj_enemy).damage;
-				dy = move_speed; // below enemy
-			}
-		} else {
-			if (instance_place(x, y + dy, obj_enemy)){
-				global.playerHealth -= instance_place(x, y + dy, obj_enemy).damage;
-			}
-		}
+		//if (dy == 0) {
+		//	if (instance_place(x, y + move_speed, obj_enemy)){
+		//		global.playerHealth -= instance_place(x, y + move_speed, obj_enemy).damage;
+		//		dy = move_speed; // below enemy
+		//	}
+		//} else {
+		//	if (instance_place(x, y + dy, obj_enemy)){
+		//		global.playerHealth -= instance_place(x, y + dy, obj_enemy).damage;
+		//	}
+		//}
 			
 		dy = -10 * dy;
 		state = PLAYER_STATE.hurt;
 			
 	} else if (!keyboard_check(vk_space) and 
 				(place_meeting(x, y - move_speed, obj_enemy) and instance_place(x, y - move_speed, obj_enemy).state != ENEMY_STATE.dead)){
-		if (dx == 0) {
-			if (instance_place(x, y - move_speed, obj_enemy)){
-				global.playerHealth -= instance_place(x, y - move_speed, obj_enemy).damage;
-				dy = -move_speed; // above enemy
-			}
-		} else {
-			if (instance_place(x, y + dy, obj_enemy)){
-				global.playerHealth -= instance_place(x, y + dy, obj_enemy).damage;
-			}
-		}
+		//if (dx == 0) {
+		//	if (instance_place(x, y - move_speed, obj_enemy)){
+		//		global.playerHealth -= instance_place(x, y - move_speed, obj_enemy).damage;
+		//		dy = -move_speed; // above enemy
+		//	}
+		//} else {
+		//	if (instance_place(x, y + dy, obj_enemy)){
+		//		global.playerHealth -= instance_place(x, y + dy, obj_enemy).damage;
+		//	}
+		//}
 			
 		dy = -10 * dy;
 		state = PLAYER_STATE.hurt;

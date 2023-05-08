@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "http_req",
+  "name": "http_post",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
