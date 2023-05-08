@@ -32,20 +32,20 @@ if room == rm_start or global.level == LEVEL.LEVEL1 or global.level == LEVEL.LEV
 //}
 
 // room 3a
-//if (room == rm_start and keyboard_check(vk_enter)) {
-//	room_goto(rm_level_3_A)
-//	global.level = LEVEL.LEVEL3
-//	obj_player.x = 800
-//	obj_player.y = 32
-//}
+if (room == rm_start and keyboard_check(vk_enter)) {
+	room_goto(rm_level_3_A)
+	global.level = LEVEL.LEVEL3
+	obj_player.x = 800
+	obj_player.y = 32
+}
 
  //room 3b
-if (room == rm_start and keyboard_check(vk_enter)) {
-	room_goto(rm_level_3_B)
-	global.level = LEVEL.LEVEL3
-	obj_player.x = 600
-	obj_player.y = 21
-}
+//if (room == rm_start and keyboard_check(vk_enter)) {
+//	room_goto(rm_level_3_B)
+//	global.level = LEVEL.LEVEL3
+//	obj_player.x = 600
+//	obj_player.y = 21
+//}
 
  //room 3c
 //if (room == rm_start and keyboard_check(vk_enter)) {
@@ -88,7 +88,7 @@ if room == rm_level_1 and (global.l1state == "l2w1" or global.l1state == "l2w2" 
 // ROOM 1 TO 3A SWITCH
 if (room == rm_level_1 and global.l1state == "DONE" and obj_player.x >= 700 and obj_player.x <= 780 and obj_player.y >= 475) {
 	room_goto(rm_level_3_A)
-	
+	show_debug_message("3A SHOWN")
 	obj_player.x = 800
 	obj_player.y = 32
 }
@@ -104,6 +104,7 @@ if (room == rm_level_1 and global.l1state == "DONE" and obj_player.x >= 700 and 
 // ROOM 3A TO 3B SWITCH
 if (room == rm_level_3_A and obj_player.x >= 150 and obj_player.x <= 250 and obj_player.y >= 1025) {
 	room_goto(rm_level_3_B)
+	show_debug_message("3B SHOWN")
 	obj_player.x = 600
 	obj_player.y = 21
 }
