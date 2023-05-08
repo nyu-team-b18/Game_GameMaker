@@ -39,6 +39,7 @@
     {"name":"inst_1CD71F48","path":"rooms/rm_start/rm_start.yy",},
     {"name":"inst_69BCB8C3","path":"rooms/rm_start/rm_start.yy",},
     {"name":"inst_736C7D22","path":"rooms/rm_start/rm_start.yy",},
+    {"name":"inst_6029FDE4","path":"rooms/rm_start/rm_start.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -125,6 +126,7 @@
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Player","depth":1100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3946F236","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":425.0,"y":252.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6029FDE4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_companion","path":"objects/obj_companion/obj_companion.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-64.0,"y":128.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":false,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Snow","depth":1200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":19,"SerialiseWidth":38,"TileCompressedData":[
 -722,30,],"TileDataFormat":1,},"tilesetId":{"name":"Winter_Farm2","path":"tilesets/Winter_Farm2/Winter_Farm2.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},

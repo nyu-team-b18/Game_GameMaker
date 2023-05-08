@@ -4,17 +4,10 @@ var _map = ds_map_create();
 // ROOM
 _map[? "room"] = room;
 	
-// PLAYER
 _map[? "playerX"] = obj_player.x;
 _map[? "playerY"] = obj_player.y;
-
-//_map[? "playerHealth"] = global.playerHealth;
-//_map[? "playerHealthMax"] = global.playerHealthMax;
-
 _map[? "playerStamina"] = global.playerStamina;
 _map[? "playerStaminaMax"] = global.playerStaminaMax;
-	
-// OTHER
 _map[? "l1state"] = global.l1state;
 _map[? "kills"] = global.kills;
 _map[? "curr_kills"] = global.curr_kills;
