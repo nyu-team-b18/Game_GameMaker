@@ -26,3 +26,6 @@ global.has_potion = false;
 global.level = LEVEL.LEVEL1;
 global.companion = "pink";
 #endregion
+
+
+post = undefined;

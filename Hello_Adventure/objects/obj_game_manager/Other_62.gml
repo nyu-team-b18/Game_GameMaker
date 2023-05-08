@@ -41,7 +41,8 @@
 		global.iUI = _map[? "iUI"];
 		
 		// INVENTORY
-		var inv = _map[? "inventory"];
+		var inv = string_split(_map[? "inventory"], ",");
+		
 		global.inventory_id.inventory = []
 		for (var i = 0; i < array_length(inv); i++){
 				 if(inv[i] == "obj_brown_chicken"){ array_push(global.inventory_id.inventory, global.items[ITEM.BR_CHICKEN]); }

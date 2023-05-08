@@ -26,9 +26,9 @@ _map[? "level"] = global.level;
 _map[? "iUI"] = global.iUI;
 	
 // INVENTORY
-var inv = []
+var inv = ""
 for (var i = 0; i < array_length(global.inventory_id.inventory); i++){
-	array_push(inv, global.inventory_id.inventory[i].obj)
+	inv += ("," + global.inventory_id.inventory[i].obj);
 }
 _map[? "inventory"] = inv;
 	
@@ -40,6 +40,6 @@ show_debug_message("Data ready to post!");
 var _headerMap = ds_map_create();
 ds_map_add(_headerMap, "Content-Type", "application/json");
 
-var post = http_request("http://127.0.0.1:5000/updatePlayerState", "POST", _headerMap, _string);
+post = http_request("http://127.0.0.1:5000/updatePlayerState", "POST", _headerMap, _string);
 ds_map_destroy(_headerMap);
 
