@@ -4,5 +4,5 @@ with (obj_enemy){
 	state = ENEMY_STATE.alive;
 }
 
-SaveGame();
-http_post();
+//SaveGame();
+//http_post();
