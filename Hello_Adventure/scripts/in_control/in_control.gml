@@ -17,11 +17,7 @@ function in_control(){
 				//global.playerHealth -= instance_place(x + move_speed, y, obj_enemy).damage;
 				dx = move_speed; // left of enemy
 			}
-		} else {
-			if (instance_place(x + dx, y, obj_enemy)){
-				//global.playerHealth -= instance_place(x + dx, y, obj_enemy).damage;
-			}
-		}
+		} 
 			
 		dx = -10* dx;
 		state = PLAYER_STATE.hurt;
@@ -34,11 +30,7 @@ function in_control(){
 				//global.playerHealth -= instance_place(x - move_speed, y, obj_enemy).damage;
 				dx = -move_speed; // left of enemy
 			}
-		} else {
-			if (instance_place(x + dx, y, obj_enemy)){
-				//global.playerHealth -= instance_place(x + dx, y, obj_enemy).damage;
-			}
-		}
+		} 
 			
 		dx = -10 * dx;
 		state = PLAYER_STATE.hurt;
@@ -50,11 +42,7 @@ function in_control(){
 				//global.playerHealth -= instance_place(x, y + move_speed, obj_enemy).damage;
 				dy = move_speed; // below enemy
 			}
-		} else {
-			if (instance_place(x, y + dy, obj_enemy)){
-				//global.playerHealth -= instance_place(x, y + dy, obj_enemy).damage;
-			}
-		}	
+		} 
 		dy = -10 * dy;
 		state = PLAYER_STATE.hurt;
 			
@@ -64,10 +52,6 @@ function in_control(){
 			if (instance_place(x, y - move_speed, obj_enemy)){
 				//global.playerHealth -= instance_place(x, y - move_speed, obj_enemy).damage;
 				dy = -move_speed; // above enemy
-			}
-		} else {
-			if (instance_place(x, y + dy, obj_enemy)){
-				//global.playerHealth -= instance_place(x, y + dy, obj_enemy).damage;
 			}
 		}
 			
