@@ -26,7 +26,7 @@ if curr_array[d_index][2] == player_spr {
 }
 draw_self()
 
-if keyboard_check_pressed(vk_shift) {
+if keyboard_check_pressed(vk_enter) {
 	
 	if d_index < array_length(curr_array) - 1 {
 		d_index += 1

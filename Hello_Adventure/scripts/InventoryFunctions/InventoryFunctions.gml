@@ -61,9 +61,14 @@ function InventoryUse(inv, index){
 			for (var i = 0; i < array_length(inv); i += 1){
 				array_push(array_temp, inv[i])
 			}
+
+			for (var i = 0; i < array_length(array_temp); i += 1){
+				array_push(inv, array_temp[i])
+			}
 			
-			var new_inv = array_concat(inv, array_temp)
-			global.inventory_id.inventory = new_inv;
+			//var new_inv = array_concat(inv, array_temp)
+			
+			global.inventory_id.inventory = inv;
 			
 			if index_value == array_length(inventory){
 				index_value = array_length(inventory) - 1
