@@ -29,7 +29,7 @@ function LoadGame(_slot){
 		global.iUI = _json[? "iUI"];
 		
 		// INVENTORY
-		var inv = _json[? "inventory"];
+		var inv = string_split(_json[? "inventory"], ",");
 		global.inventory_id.inventory = []
 		for (var i = 0; i < array_length(inv); i++){
 				 if(inv[i] == "obj_brown_chicken"){ array_push(global.inventory_id.inventory, global.items[ITEM.BR_CHICKEN]); }
