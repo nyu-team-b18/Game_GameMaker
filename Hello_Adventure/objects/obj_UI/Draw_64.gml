@@ -2,7 +2,9 @@
 
 // Display health and stamina when player is not in level 1 or in the start room
 
+
 #region HEALTH
+/*
 if global.level == LEVEL.LEVEL3 or global.level == LEVEL.ENEMY_LAIR  or global.level == LEVEL.END  {
 	var _playerHealth = global.playerHealth; // total number of hearts to draw
 	var _playerHealthMax = global.playerHealthMax;
@@ -17,7 +19,9 @@ if global.level == LEVEL.LEVEL3 or global.level == LEVEL.ENEMY_LAIR  or global.l
 		draw_sprite(spr_health, _imageIndex, 8 + ((i-1) * 16), 24);
 	}
 }
+*/
 #endregion
+
 
 #region STAMINA
 if global.level != LEVEL.LEVEL1 {

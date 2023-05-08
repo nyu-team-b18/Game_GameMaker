@@ -1,5 +1,5 @@
 /// @description runs when we get response
-if(ds_map_find_value(async_load, "id", post)){
+if(ds_map_find_value(async_load, "id") == post){
 	if (ds_map_find_value(async_load, "status") == 0){
 		show_message("Worked");
 	} else {
@@ -15,15 +15,15 @@ if(ds_map_find_value(async_load, "id", post)){
 		show_debug_message("Invalid result.");
 		exit;
 	} else {
-		var _data = _map[? "playerHealth"];
-		show_message("Got data: " + string(_data));
+		//var _data = _map[? "playerHealth"];
+		//show_message("Got data: " + string(_data));
 		
 		// PLAYER
 		obj_player.x = _map[? "playerX"];
 		obj_player.y = _map[? "playerY"];
 	
-		global.playerHealth = _map[? "playerHealth"];
-		global.playerHealthMax= _map[? "playerHealth"];
+		//global.playerHealth = _map[? "playerHealth"];
+		//global.playerHealthMax= _map[? "playerHealth"];
 		global.playerStamina = _map[? "playerStamina"];
 		global.playerStaminaMax = _map[? "playerStaminaMax"];
 		
@@ -38,7 +38,7 @@ if(ds_map_find_value(async_load, "id", post)){
 		global.level = _map[? "level"];
 		
 		// GUI
-		global.iUI = _map[? "iUI"];
+		//global.iUI = _map[? "iUI"];
 		
 		// INVENTORY
 		var _inv = _map[? "inventory"];
@@ -64,8 +64,10 @@ if(ds_map_find_value(async_load, "id", post)){
 		room_goto(_map[? "room"]);
 	}
 
+	/*
 	if (ds_map_exists(_map, "playerHealth")){
 		var _data = _map[? "playerHealth"];
 		show_message("Got data: " + string(_data));
 	}
+	*/
 }

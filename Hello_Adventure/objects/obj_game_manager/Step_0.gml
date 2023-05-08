@@ -24,20 +24,20 @@ if room == rm_start or global.level == LEVEL.LEVEL1 or global.level == LEVEL.LEV
 // comment out the if statement needed to start at the needed room
 
 //room 1
-//if (room == rm_start and keyboard_check(vk_enter)) {
-//	room_goto(rm_level_1)
-//	global.level = LEVEL.LEVEL1
-//	obj_player.x = -30
-//	obj_player.y = 110
-//}
+if (room == rm_start and keyboard_check(vk_enter)) {
+	room_goto(rm_level_1)
+	global.level = LEVEL.LEVEL1
+	obj_player.x = -30
+	obj_player.y = 110
+}
 
 // room 3a
-if (room == rm_start and keyboard_check(vk_enter)) {
-	room_goto(rm_level_3_A)
-	global.level = LEVEL.LEVEL3
-	obj_player.x = 800
-	obj_player.y = 32
-}
+//if (room == rm_start and keyboard_check(vk_enter)) {
+//	room_goto(rm_level_3_A)
+//	global.level = LEVEL.LEVEL3
+//	obj_player.x = 800
+//	obj_player.y = 32
+//}
 
  //room 3b
 //if (room == rm_start and keyboard_check(vk_enter)) {

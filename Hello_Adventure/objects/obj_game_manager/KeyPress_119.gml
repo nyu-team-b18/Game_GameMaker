@@ -7,8 +7,8 @@ _map[? "room"] = room;
 // PLAYER
 _map[? "playerX"] = obj_player.x;
 _map[? "playerY"] = obj_player.y;
-_map[? "playerHealth"] = global.playerHealth;
-_map[? "playerHealthMax"] = global.playerHealthMax;
+//_map[? "playerHealth"] = global.playerHealth;
+//_map[? "playerHealthMax"] = global.playerHealthMax;
 _map[? "playerStamina"] = global.playerStamina;
 _map[? "playerStaminaMax"] = global.playerStaminaMax;
 	
@@ -23,7 +23,7 @@ _map[? "has_potion"] = global.has_potion;
 _map[? "level"] = global.level;
 	
 // GUI
-_map[? "iUI"] = global.iUI;
+//_map[? "iUI"] = global.iUI;
 	
 // INVENTORY
 var inv = ""
