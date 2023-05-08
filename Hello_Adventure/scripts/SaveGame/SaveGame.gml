@@ -7,8 +7,10 @@ function SaveGame(_slot){
 	// PLAYER
 	_map[? "playerX"] = obj_player.x;
 	_map[? "playerY"] = obj_player.y;
+
 	//_map[? "playerHealth"] = global.playerHealth;
 	//_map[? "playerHealthMax"] = global.playerHealthMax;
+
 	_map[? "playerStamina"] = global.playerStamina;
 	_map[? "playerStaminaMax"] = global.playerStaminaMax;
 	

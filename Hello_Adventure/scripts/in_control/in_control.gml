@@ -28,6 +28,7 @@ function in_control(){
 			
 	} else if (!keyboard_check(vk_space) and 
 				(place_meeting(x - move_speed, y, obj_enemy) and instance_place(x - move_speed, y, obj_enemy).state != ENEMY_STATE.dead)){
+
 		if (dx == 0) {
 			if (instance_place(x - move_speed, y, obj_enemy)){
 				//global.playerHealth -= instance_place(x - move_speed, y, obj_enemy).damage;
@@ -53,8 +54,7 @@ function in_control(){
 			if (instance_place(x, y + dy, obj_enemy)){
 				//global.playerHealth -= instance_place(x, y + dy, obj_enemy).damage;
 			}
-		}
-			
+		}	
 		dy = -10 * dy;
 		state = PLAYER_STATE.hurt;
 			

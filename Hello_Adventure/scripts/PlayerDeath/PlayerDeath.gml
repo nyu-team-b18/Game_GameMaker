@@ -12,8 +12,10 @@ function PlayerDeath(){
 	_map[? "playerY"] = 32;
 	//_map[? "playerX"] = 600;
 	//_map[? "playerY"] = 130;
+
 	//_map[? "playerHealth"] = global.playerHealthMax;
 	//_map[? "playerHealthMax"] = global.playerHealthMax;
+
 	_map[? "playerStamina"] = global.playerStaminaMax;
 	_map[? "playerStaminaMax"] = global.playerStaminaMax;
 	

@@ -24,6 +24,7 @@ if(ds_map_find_value(async_load, "id") == post){
 	
 		//global.playerHealth = _map[? "playerHealth"];
 		//global.playerHealthMax= _map[? "playerHealth"];
+
 		global.playerStamina = _map[? "playerStamina"];
 		global.playerStaminaMax = _map[? "playerStaminaMax"];
 		

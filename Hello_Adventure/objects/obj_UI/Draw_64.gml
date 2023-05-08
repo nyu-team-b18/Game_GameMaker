@@ -2,7 +2,6 @@
 
 // Display health and stamina when player is not in level 1 or in the start room
 
-
 #region HEALTH
 /*
 if global.level == LEVEL.LEVEL3 or global.level == LEVEL.ENEMY_LAIR  or global.level == LEVEL.END  {
@@ -21,6 +20,7 @@ if global.level == LEVEL.LEVEL3 or global.level == LEVEL.ENEMY_LAIR  or global.l
 }
 */
 #endregion
+
 
 
 #region STAMINA

@@ -128,7 +128,7 @@
     {"name":"black_cow","order":17,"path":"sprites/black_cow/black_cow.yy",},
     {"name":"front_blush","order":2,"path":"sprites/front_blush/front_blush.yy",},
     {"name":"spr_health","order":7,"path":"sprites/spr_health/spr_health.yy",},
-    {"name":"http_req","order":5,"path":"scripts/http_req/http_req.yy",},
+    {"name":"http_post","order":5,"path":"scripts/http_post/http_post.yy",},
     {"name":"sheep_idle","order":2,"path":"sprites/sheep_idle/sheep_idle.yy",},
     {"name":"fluffy_sheep","order":24,"path":"sprites/fluffy_sheep/fluffy_sheep.yy",},
     {"name":"strawberry_cow_idle","order":4,"path":"sprites/strawberry_cow_idle/strawberry_cow_idle.yy",},
