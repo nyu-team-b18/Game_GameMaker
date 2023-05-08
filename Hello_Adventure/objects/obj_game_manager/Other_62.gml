@@ -1,9 +1,9 @@
 /// @description runs when we get response
 if(ds_map_find_value(async_load, "id") == post){
 	if (ds_map_find_value(async_load, "status") == 0){
-		show_message("Worked");
+		//show_message("Worked");
 	} else {
-		show_message("Did not work")
+		//show_message("Did not work")
 	}
 } else {
 	var _json = async_load[? "result"]; // result of request 
