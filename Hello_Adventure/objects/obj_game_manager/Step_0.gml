@@ -32,12 +32,12 @@ if room == rm_start or global.level == LEVEL.LEVEL1 or global.level == LEVEL.LEV
 //}
 
 // room 3a
-//if (room == rm_start and keyboard_check(vk_enter)) {
-//	room_goto(rm_level_3_A)
-//	global.level = LEVEL.LEVEL3
-//	obj_player.x = 800
-//	obj_player.y = 32
-//}
+if (room == rm_start and keyboard_check(vk_enter)) {
+	room_goto(rm_level_3_A)
+	global.level = LEVEL.LEVEL3
+	obj_player.x = 800
+	obj_player.y = 32
+}
 
  //room 3b
 //if (room == rm_start and keyboard_check(vk_enter)) {
@@ -48,12 +48,12 @@ if room == rm_start or global.level == LEVEL.LEVEL1 or global.level == LEVEL.LEV
 //}
 
  //room 3c
-if (room == rm_start and keyboard_check(vk_enter)) {
-	room_goto(rm_level_3_C)
-	global.level = LEVEL.LEVEL3
-	obj_player.x = 593
-	obj_player.y = 108
-}
+//if (room == rm_start and keyboard_check(vk_enter)) {
+//	room_goto(rm_level_3_C)
+//	global.level = LEVEL.LEVEL3
+//	obj_player.x = 593
+//	obj_player.y = 108
+//}
 
  //room 3d
 //if (room == rm_start and keyboard_check(vk_enter)) {
