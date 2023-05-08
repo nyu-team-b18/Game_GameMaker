@@ -23,6 +23,6 @@ global.key_used = 0;
 global.has_chicks = false;
 global.has_potion = false;
 
-global.level = LEVEL.START;
+global.level = LEVEL.LEVEL1;
 global.companion = "pink";
 #endregion
