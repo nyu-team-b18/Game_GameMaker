@@ -22,32 +22,6 @@ if room == rm_start or global.level == LEVEL.LEVEL1 or global.level == LEVEL.LEV
 // START TO ROOM 1
 // USE THIS CODE TO SWITCH ROOMS FOR TESTING
 // comment out the if statement needed to start at the needed room
-
-
-if ((global.level == LEVEL.LEVEL1 or global.level == LEVEL.LEVEL2) and keyboard_check(vk_enter)) {
-	room_goto(rm_level_1)
-
-	obj_player.x = -30
-	obj_player.y = 110
-} else if (global.level == LEVEL.LEVEL3 and keyboard_check(vk_enter)){
-	room_goto(rm_level_3_A)
-
-	obj_player.x = 800
-	obj_player.y = 32
-} else if (global.level == LEVEL.ENEMY_LAIR and keyboard_check(vk_enter)){
-	room_goto(rm_level_3_D)
-
-	obj_player.x = 103
-	obj_player.y = 285
-} else if (global.level == LEVEL.END and keyboard_check(vk_enter)){
-	room_goto(rm_level_3_E)
-
-	obj_player.x = 740
-	obj_player.y = 445
-}
-
-
-
 //room 1
 if (room == rm_start and keyboard_check(vk_enter)) {
 	room_goto(rm_level_1)
