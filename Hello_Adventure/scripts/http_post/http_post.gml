@@ -24,9 +24,6 @@ function http_post(){
 	_map[? "has_potion"] = global.has_potion;
 	_map[? "level"] = global.level;
 	
-	// GUI
-	_map[? "iUI"] = global.iUI;
-	
 	// INVENTORY
 	var inv = ""
 	for (var i = 0; i < array_length(global.inventory_id.inventory); i++){

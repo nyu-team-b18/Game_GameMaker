@@ -26,9 +26,6 @@ function PlayerDeath(){
 	_map[? "has_potion"] = false;
 	_map[? "level"] = LEVEL.LEVEL3;
 	
-	// GUI
-	_map[? "iUI"] = global.iUI;
-	
 	// INVENTORY
 	_map[? "inventory"] = [];
 	

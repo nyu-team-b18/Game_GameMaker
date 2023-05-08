@@ -23,9 +23,6 @@ function LoadGame(_slot){
 		global.has_potion = _json[? "has_potion"];
 		global.level = _json[? "level"];
 		
-		// GUI
-		global.iUI = _json[? "iUI"];
-		
 		// INVENTORY
 		var _inv = _map[? "inventory"];
 		global.inventory_id.inventory = []
