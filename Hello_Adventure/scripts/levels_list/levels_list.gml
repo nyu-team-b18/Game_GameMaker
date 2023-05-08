@@ -1,5 +1,4 @@
 enum LEVEL{
-	START,
 	LEVEL1,
 	LEVEL2,
 	LEVEL3,

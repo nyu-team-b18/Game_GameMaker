@@ -9,7 +9,7 @@ if global.l1state == "pregame" or global.l1state == "path" or obj_dialogue.visib
 #endregion
 
 #region COMPANION VISIBILITY
-if global.level == LEVEL.START or global.level == LEVEL.LEVEL1 or global.level == LEVEL.LEVEL2 {
+if room == rm_start or global.level == LEVEL.LEVEL1 or global.level == LEVEL.LEVEL2 {
 	if global.l1state == "DONE" {
 		obj_companion.visible = true 
 	} else {
@@ -57,6 +57,7 @@ if ((global.level == LEVEL.LEVEL1 or global.level == LEVEL.LEVEL2) and keyboard_
 //}
 
 // room 3a
+
 //if (room == rm_start and keyboard_check(vk_enter)) {
 //	room_goto(rm_level_3_A)
 //	global.level = LEVEL.LEVEL3
@@ -128,6 +129,7 @@ if (room == rm_level_1 and global.l1state == "DONE" and obj_player.x >= 700 and 
 // ROOM 3A TO 3B SWITCH
 if (room == rm_level_3_A and obj_player.x >= 150 and obj_player.x <= 250 and obj_player.y >= 1025) {
 	room_goto(rm_level_3_B)
+	show_debug_message("3B SHOWN")
 	obj_player.x = 600
 	obj_player.y = 21
 }
