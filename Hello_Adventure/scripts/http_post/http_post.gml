@@ -1,4 +1,7 @@
-function SaveGame(_slot){
+// Script assets have changed for v2.3.0 see
+// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+function http_post(){
+	/// @description http_post
 	var _map = ds_map_create();
 	
 	// ROOM
@@ -31,20 +34,14 @@ function SaveGame(_slot){
 	}
 	_map[? "inventory"] = inv;
 	
-	// save all of this data into a string
-	var _string = json_encode(_map);
-	SaveStringToFile("save" + string(global.gameSaveSlot) + ".sav", _string);
-	show_debug_message(_string);
 	
-	// nuke the data
+	var _string = json_encode(_map);
 	ds_map_destroy(_map);
-	show_debug_message("Game saved!");
-}
+	show_debug_message("Data ready to post!");
 
+	var _headerMap = ds_map_create();
+	ds_map_add(_headerMap, "Content-Type", "application/json");
 
-function SaveStringToFile(_filename, _string){
-	var _buffer = buffer_create(string_byte_length(_string)+1, buffer_fixed, 1);
-	buffer_write(_buffer, buffer_string, _string);
-	buffer_save(_buffer, _filename);
-	buffer_delete(_buffer);
+	post = http_request("http://127.0.0.1:5000/updatePlayerState", "POST", _headerMap, _string);
+	ds_map_destroy(_headerMap);
 }
