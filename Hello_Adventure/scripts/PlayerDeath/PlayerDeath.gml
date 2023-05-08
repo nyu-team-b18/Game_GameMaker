@@ -13,6 +13,9 @@ function PlayerDeath(){
 	//_map[? "playerX"] = 600;
 	//_map[? "playerY"] = 130;
 
+	//_map[? "playerHealth"] = global.playerHealthMax;
+	//_map[? "playerHealthMax"] = global.playerHealthMax;
+
 	_map[? "playerStamina"] = global.playerStaminaMax;
 	_map[? "playerStaminaMax"] = global.playerStaminaMax;
 	
@@ -25,6 +28,9 @@ function PlayerDeath(){
 	_map[? "has_chicks"] = false;
 	_map[? "has_potion"] = false;
 	_map[? "level"] = LEVEL.LEVEL3;
+	
+	// GUI
+	//_map[? "iUI"] = global.iUI;
 	
 	// INVENTORY
 	_map[? "inventory"] = [];

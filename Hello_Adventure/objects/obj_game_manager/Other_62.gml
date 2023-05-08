@@ -22,6 +22,9 @@ if(ds_map_find_value(async_load, "id") == post){
 		obj_player.x = _map[? "playerX"];
 		obj_player.y = _map[? "playerY"];
 	
+		//global.playerHealth = _map[? "playerHealth"];
+		//global.playerHealthMax= _map[? "playerHealth"];
+
 		global.playerStamina = _map[? "playerStamina"];
 		global.playerStaminaMax = _map[? "playerStaminaMax"];
 		
@@ -35,6 +38,8 @@ if(ds_map_find_value(async_load, "id") == post){
 		global.has_potion = _map[? "has_potion"];
 		global.level = _map[? "level"];
 		
+		// GUI
+		//global.iUI = _map[? "iUI"];
 		
 		// INVENTORY
 		var _inv = _map[? "inventory"];
@@ -60,8 +65,10 @@ if(ds_map_find_value(async_load, "id") == post){
 		room_goto(_map[? "room"]);
 	}
 
-	//if (ds_map_exists(_map, "playerHealth")){
-	//	var _data = _map[? "playerHealth"];
-	//	show_message("Got data: " + string(_data));
-	//}
+	/*
+	if (ds_map_exists(_map, "playerHealth")){
+		var _data = _map[? "playerHealth"];
+		show_message("Got data: " + string(_data));
+	}
+	*/
 }

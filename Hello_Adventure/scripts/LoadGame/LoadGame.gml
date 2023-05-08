@@ -10,6 +10,9 @@ function LoadGame(_slot){
 		obj_player.x = _json[? "playerX"];
 		obj_player.y = _json[? "playerY"];
 	
+		//global.playerHealth = _json[? "playerHealth"];
+		//global.playerHealthMax= _json[? "playerHealth"];
+
 		global.playerStamina = _json[? "playerStamina"];
 		global.playerStaminaMax = _json[? "playerStaminaMax"];
 		
@@ -23,6 +26,9 @@ function LoadGame(_slot){
 		global.has_potion = _json[? "has_potion"];
 		global.level = _json[? "level"];
 		
+		// GUI
+		//global.iUI = _json[? "iUI"];
+    
 		// INVENTORY
 		var _inv = _map[? "inventory"];
 		global.inventory_id.inventory = []

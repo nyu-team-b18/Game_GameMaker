@@ -49,15 +49,14 @@ if ((global.level == LEVEL.LEVEL1 or global.level == LEVEL.LEVEL2) and keyboard_
 
 
 //room 1
-//if (room == rm_start and keyboard_check(vk_enter)) {
-//	room_goto(rm_level_1)
-//	global.level = LEVEL.LEVEL1
-//	obj_player.x = -30
-//	obj_player.y = 110
-//}
+if (room == rm_start and keyboard_check(vk_enter)) {
+	room_goto(rm_level_1)
+	global.level = LEVEL.LEVEL1
+	obj_player.x = -30
+	obj_player.y = 110
+}
 
 // room 3a
-
 //if (room == rm_start and keyboard_check(vk_enter)) {
 //	room_goto(rm_level_3_A)
 //	global.level = LEVEL.LEVEL3

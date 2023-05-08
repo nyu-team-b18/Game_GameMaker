@@ -48,9 +48,8 @@ if dialogue_spr != 0 and !dialogue_loaded {
 	    [0],
 		[dialogue_spr],
 		["These fireballs are a bit aggressive", "Companion", dialogue_spr],
-		["Don't let them hit you. You'll lose hearts", "Companion", dialogue_spr],
 		["Try pressing space to hit the fire enemies", "Companion", dialogue_spr],
-		["Maybe one will drop something.", "Companion", dialogue_spr],
+		["Maybe one will drop something...", "Companion", dialogue_spr],
 		["", "", NaN]
 	]
 
