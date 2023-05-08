@@ -35,8 +35,6 @@ if(ds_map_find_value(async_load, "id") == post){
 		global.has_potion = _map[? "has_potion"];
 		global.level = _map[? "level"];
 		
-		// GUI
-		global.iUI = _map[? "iUI"];
 		
 		// INVENTORY
 		var _inv = _map[? "inventory"];
