@@ -8,7 +8,7 @@ if obj_companion.visible == true and obj_companion.dialogue == false {
 	state = PLAYER_STATE.in_control
 }
 
-if (keyboard_check(vk_space)){
+if (keyboard_check(vk_space)) and state == PLAYER_STATE.in_control {
 	state = PLAYER_STATE.attack;
 }
 
